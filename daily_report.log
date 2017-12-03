@@ -1,0 +1,3418 @@
+copy today's file as predition file
+end of copy
+---------begin predict exposure-------
+2017-11-29 10:00:07  -  new session: 20171129100006be389a0a0297976c	total lines: 7,527
+2017-11-29 10:00:07  -  file [0]: [0, 7,527), data/input/fenqi_cycle_amount_old_rate.txt
+downloading 7,527 records into 1 file
+2017-11-29 10:00:07  -  file [0] start
+2017-11-29 10:00:07  -  file [0] OK. total: 403.3 KB
+download OK
+2017-11-29 10:00:09  -  new session: 2017112910000832399a0a028726d2	total lines: 179,984
+2017-11-29 10:00:09  -  file [0]: [0, 179,984), data/input/fenqi_cycle_fenqi_diff_amount_rate_old_file.csv
+downloading 179,984 records into 1 file
+2017-11-29 10:00:09  -  file [0] start
+2017-11-29 10:00:11  -  file [0] OK. total: 10.7 MB
+total: 10.7 MB, time: 2 s, average speed: 5.3 MB/s
+download OK
+2017-11-29 10:00:14  -  new session: 20171129100013af389a0a0289a946	total lines: 1,609
+2017-11-29 10:00:14  -  file [0]: [0, 1,609), data/input/qudian_amount_data_file.csv
+downloading 1,609 records into 1 file
+2017-11-29 10:00:14  -  file [0] start
+2017-11-29 10:00:14  -  file [0] OK. total: 45.9 KB
+download OK
+2017-11-29 10:00:17  -  new session: 201711291000152d3c9b0a0286c88e	total lines: 30,663
+2017-11-29 10:00:17  -  file [0]: [0, 30,663), data/input/order_create_cycle_fenqi_capital_rate.csv
+downloading 30,663 records into 1 file
+2017-11-29 10:00:17  -  file [0] start
+2017-11-29 10:00:18  -  file [0] OK. total: 1.6 MB
+total: 1.6 MB, time: 1 s, average speed: 1.6 MB/s
+download OK
+2017-11-29 10:00:19  -  new session: 2017112910001936399a0a02870a56	total lines: 8,789
+2017-11-29 10:00:19  -  file [0]: [0, 8,789), data/input/fenqi_cycle_fenqi_mean_overdue_rate.csv
+downloading 8,789 records into 1 file
+2017-11-29 10:00:19  -  file [0] start
+2017-11-29 10:00:22  -  file [0] OK. total: 6.2 MB
+total: 6.2 MB, time: 2 s, average speed: 3.1 MB/s
+download OK
+2017-11-29 10:00:23  -  new session: 2017112910002319399a0a0286feed	total lines: 179,972
+2017-11-29 10:00:23  -  file [0]: [0, 179,972), data/input/order_created_deadline_overdue_rate.csv
+downloading 179,972 records into 1 file
+2017-11-29 10:00:23  -  file [0] start
+2017-11-29 10:00:28  -  [0] 10%, 18,876 records downloaded, 3.6 MB/s
+2017-11-29 10:00:33  -  [0] 42%, 75,809 records downloaded, 8.5 MB/s
+2017-11-29 10:00:37  -  file [0] OK. total: 96 MB
+total: 96 MB, time: 13 s, average speed: 7.4 MB/s
+download OK
+2017-11-29 10:00:38  -  new session: 201711291000381d399a0a028719be	total lines: 179,972
+2017-11-29 10:00:38  -  file [0]: [0, 179,972), data/input/order_bill_now_data_file.csv
+downloading 179,972 records into 1 file
+2017-11-29 10:00:38  -  file [0] start
+2017-11-29 10:00:43  -  [0] 6%, 11,645 records downloaded, 2.5 MB/s
+2017-11-29 10:00:48  -  [0] 29%, 52,592 records downloaded, 7.9 MB/s
+2017-11-29 10:00:53  -  [0] 65%, 117,587 records downloaded, 7.2 MB/s
+2017-11-29 10:00:55  -  file [0] OK. total: 105.8 MB
+total: 105.8 MB, time: 16 s, average speed: 6.6 MB/s
+download OK
+2017-11-29 10:00:56  -  new session: 2017112910005611399a0a0288d3b6	total lines: 1
+2017-11-29 10:00:56  -  file [0]: [0, 1), data/input/jituan_overdue_flow_data_file.csv
+downloading 1 records into 1 file
+2017-11-29 10:00:56  -  file [0] start
+2017-11-29 10:00:57  -  file [0] OK. total: 2.4 KB
+download OK
+-------数据准备结束------
+deal_data_format.py:171: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df_tmp[order_dt] = self.this_dt
+deal data format: config file: ../../data/config/config_data version:  test_1123 ,this_dt: 2017-11-29
+2017-11-29 10:00:57
+加载文件......
+will deal list dict init .....
+---- 2017-11,5,9218839000.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-11,6,643506352.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-12,5,7839249000.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2017-12,6,602771377.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-01,5,8108822824.0 ------------
+---- 2018-01,6,611362700.0 ------------
+---- 2018-02,5,5090949650.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-02,6,453855900.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-03,5,9271815030.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-03,6,612328200.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-04,5,8500037300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-04,6,591815300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-05,5,8377039428.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-05,6,620192700.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-06,5,9298598710.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-06,6,695169800.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-07,5,8314859786.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-07,6,678154300.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-08,5,8275879098.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-08,6,689439900.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-09,5,8268954021.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-09,6,706740400.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-10,5,8391437746.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-10,6,715603700.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-11,5,9514930570.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-11,6,822043800.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-12,5,8566066100.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-12,6,816334600.0 ------------
+如果该月没有预估过 需要初始化 12
+加载完毕. 2017-11-29 10:00:58
+deal mean parameters: config file: ../../data/config/config_data
+will count fitting parameters.....
+deal parameter rules: config file: ../../data/config/config_data
+len: 4 ,sys: ['deal_parameters_rules.py', '../../data/config/config_data', 'laifenqi', '2017-11-29']
+this_dt: 2017-11-29
+will count fitting parameters.....
+df: 179972
+-------数据处理结束------
+./../lib/create_new_bill.py:105: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df[dt] = this_dt
+/home/risk/lib/python2.7/site-packages/pandas/core/frame.py:2746: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  **kwargs)
+/home/risk/lib/python2.7/site-packages/pandas/core/reshape/merge.py:1457: RuntimeWarning: divide by zero encountered in long_scalars
+  stride //= shape[i]
+config file: ../../data/config/config_data ,count end month: 2018-01-10 ,this date type: day ,this migration coefficient: 1.0 ,create risk coefficient: 1.0
+len: 9 ,sys: ['exposure_estimator.py', '../../data/config/config_data', '2018-01-10', 'day', '1.0', '1.0', 'month', 'laifenqi', '2017-11-29']
+this_dt: 2017-11-29
+will begin estimator order exposure..... 2017-11-29 10:02:01
+创建账单表..... 2017-11-29 10:02:01
+bill over! 2017-11-29 10:02:32
+init dict over! 2017-11-29 10:02:35
+账单表创建完毕。 2017-11-29 10:02:35
+********************************* 初始化读文件耗时： 34.2268939018  seconds *******************************
+product_parameter_dict: {'laifenqi,6,2,6': ['1.0', '136.837216775', '1.05393848366', '129.079060978'], 'laifenqi,999,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,6,2,3': ['1.0', '132.13916477', '1.0', '266.997698061'], 'laifenqi,6,2,2': ['1.0', '138.28159746', '1.0', '246.031319376'], 'laifenqi,6,2,9': ['1.0', '206.261180139', '1.0', '124.464530563'], 'laifenqi,8,2,6': ['1.0', '33.0638031377', '1.049', '31.5109402815'], 'laifenqi,5,2,12': ['1.0', '14.7597127765', '1.0', '47.7031140945'], 'laifenqi,8,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,5,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,8,2,12': ['1.0', '58.6654335515', '1.0', '79.864962906'], 'laifenqi,6,2,12': ['1.0', '170.197795404', '1.0', '367.049155491'], 'laifenqi,5,1,1': ['1.0', '359.572649888', '1.0', '1016.78308813'], 'laifenqi,6,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,5,2,9': ['1.0', '10.6798802246', '1.0', '67.1685495504'], 'laifenqi,5,2,6': ['1.0', '558.955641544', '1.17252963796', '265.659450402'], 'laifenqi,5,2,3': ['1.0', '371.641402572', '1.04377320918', '216.412851884'], 'laifenqi,5,2,1': ['1.0', '724.360688476', '1.0', '710.27832597']}
+账单数量: 205879
+产品: laifenqi,6,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.05393848366 ,after adjustment: 1.0 1.05393848366 2017-11-29 10:02:35
+产品: laifenqi,6,2,6 ,migration rate: 1.0 ,risk rate: 1.05393848366 2017-11-29 10:02:35
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 205879
+-------------------该产品账单表数量: 26023
+-------------------剩余账单表数量: 179856
+**************************************** 计算产品 laifenqi,6,2,6 的逾期金额耗时： 13.0262439251  seconds **********************************
+产品: laifenqi,6,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:03:52
+产品: laifenqi,6,2,3 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:03:52
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 179856
+-------------------该产品账单表数量: 12037
+-------------------剩余账单表数量: 167819
+**************************************** 计算产品 laifenqi,6,2,3 的逾期金额耗时： 6.98140597343  seconds **********************************
+产品: laifenqi,6,2,2 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:04:35
+产品: laifenqi,6,2,2 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:04:35
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 167819
+-------------------该产品账单表数量: 8914
+-------------------剩余账单表数量: 158905
+**************************************** 计算产品 laifenqi,6,2,2 的逾期金额耗时： 6.01377296448  seconds **********************************
+产品: laifenqi,6,2,9 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:05:11
+产品: laifenqi,6,2,9 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:05:11
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 158905
+-------------------该产品账单表数量: 38886
+-------------------剩余账单表数量: 120019
+**************************************** 计算产品 laifenqi,6,2,9 的逾期金额耗时： 21.1930279732  seconds **********************************
+产品: laifenqi,8,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.049 ,after adjustment: 1.0 1.049 2017-11-29 10:06:59
+产品: laifenqi,8,2,6 ,migration rate: 1.0 ,risk rate: 1.049 2017-11-29 10:06:59
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 120019
+-------------------该产品账单表数量: 2954
+-------------------剩余账单表数量: 117065
+产品: laifenqi,5,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:07:01
+产品: laifenqi,5,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:07:01
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 117065
+-------------------该产品账单表数量: 7291
+-------------------剩余账单表数量: 109774
+**************************************** 计算产品 laifenqi,5,2,12 的逾期金额耗时： 2.64986300468  seconds **********************************
+产品: laifenqi,8,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:07:10
+产品: laifenqi,8,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:07:10
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 109774
+-------------------该产品账单表数量: 21003
+-------------------剩余账单表数量: 88771
+产品: laifenqi,6,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:07:23
+产品: laifenqi,6,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:07:23
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 88771
+-------------------该产品账单表数量: 49980
+-------------------剩余账单表数量: 38791
+**************************************** 计算产品 laifenqi,6,2,12 的逾期金额耗时： 28.0010750294  seconds **********************************
+产品: laifenqi,5,1,1 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:09:20
+产品: laifenqi,5,1,1 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:09:20
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 38791
+-------------------该产品账单表数量: 2029
+-------------------剩余账单表数量: 36762
+**************************************** 计算产品 laifenqi,5,1,1 的逾期金额耗时： 0.915733098984  seconds **********************************
+产品: laifenqi,5,2,9 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:09:27
+产品: laifenqi,5,2,9 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:09:27
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 36762
+-------------------该产品账单表数量: 5394
+-------------------剩余账单表数量: 31368
+**************************************** 计算产品 laifenqi,5,2,9 的逾期金额耗时： 2.59337806702  seconds **********************************
+产品: laifenqi,5,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.17252963796 ,after adjustment: 1.0 1.17252963796 2017-11-29 10:09:36
+产品: laifenqi,5,2,6 ,migration rate: 1.0 ,risk rate: 1.17252963796 2017-11-29 10:09:36
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 31368
+-------------------该产品账单表数量: 11396
+-------------------剩余账单表数量: 19972
+**************************************** 计算产品 laifenqi,5,2,6 的逾期金额耗时： 3.3501830101  seconds **********************************
+产品: laifenqi,5,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.04377320918 ,after adjustment: 1.0 1.04377320918 2017-11-29 10:10:10
+产品: laifenqi,5,2,3 ,migration rate: 1.0 ,risk rate: 1.04377320918 2017-11-29 10:10:10
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 19972
+-------------------该产品账单表数量: 5414
+-------------------剩余账单表数量: 14558
+**************************************** 计算产品 laifenqi,5,2,3 的逾期金额耗时： 1.64179897308  seconds **********************************
+产品: laifenqi,5,2,1 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-11-29 10:10:28
+产品: laifenqi,5,2,1 ,migration rate: 1.0 ,risk rate: 1.0 2017-11-29 10:10:28
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 14558
+-------------------该产品账单表数量: 1875
+-------------------剩余账单表数量: 12683
+**************************************** 计算产品 laifenqi,5,2,1 的逾期金额耗时： 0.664808988571  seconds **********************************
+产品: laifenqi,5,999,999 ,migration rate;risk rate,before adjustment: 1.0 1.25
+after adjustment: 1.0 1.25 2017-11-29 10:10:37
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 12683
+-------------------该产品账单表数量: 10185
+-------------------剩余账单表数量: 2498
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+产品: laifenqi,6,999,999 ,migration rate;risk rate,before adjustment: 1.0 1.25
+after adjustment: 1.0 1.25 2017-11-29 10:11:02
+-------------------总账单表数量: 205879
+-------------------剩余账单表数量: 2498
+-------------------该产品账单表数量: 2498
+-------------------剩余账单表数量: 0
+all product bills over! 2017-11-29 10:11:12
+********************************* 计算各逾期金额、敞口的总耗时： 516.567850113  seconds *******************
+Day :  2017-11-29,2017-11-30,2017-12-01,2017-12-02,2017-12-03,2017-12-04,2017-12-05,2017-12-06,2017-12-07,2017-12-08,2017-12-09,2017-12-10,2017-12-11,2017-12-12,2017-12-13,2017-12-14,2017-12-15,2017-12-16,2017-12-17,2017-12-18,2017-12-19,2017-12-20,2017-12-21,2017-12-22,2017-12-23,2017-12-24,2017-12-25,2017-12-26,2017-12-27,2017-12-28,2017-12-29,2017-12-30,2017-12-31,2018-01-01,2018-01-02,2018-01-03,2018-01-04,2018-01-05,2018-01-06,2018-01-07,2018-01-08,2018-01-09,2018-01-10
+M0+ : 565348842.819,579594516.705,592348193.326,600609179.717,609124535.586,620040464.907,628068560.205,636092441.363,644886759.833,652091342.753,661144534.366,670124925.635,680880601.301,687323563.515,694431214.076,700669622.848,707457458.797,715489336.281,721650355.184,726426293.865,735386158.054,744365406.817,751480800.128,755914660.743,761788966.136,767232543.544,772619146.769,776964308.877,780650537.243,783345438.705,786817909.328,800828381.85,792604927.768,800050980.326,805720405.585,810528275.693,817288925.26,822061056.22,826771499.503,831810600.106,837591542.75,843772351.408,849021570.989
+M1+ : 406100907.37,413166613.199,416581780.058,419520089.778,422458682.538,426104910.103,430024978.322,433782325.617,437573682.0,441944532.411,446023568.777,450591486.707,454743950.48,459307109.22,463545240.236,467843809.968,472307628.977,477176596.314,482069907.918,487521093.192,492680413.489,497099861.072,501001257.212,506032055.216,510724175.036,515745287.601,521002327.358,526546375.763,532391727.233,539456805.804,552423264.876,552217786.831,559550024.104,567150213.382,575098685.874,584694546.5,592757988.852,600776478.147,608819168.748,616662595.709,624755851.185,633447052.585,642847780.476
+M2+ : 299177098.445,303021915.143,305823325.796,308135322.598,310514011.796,313543556.127,316866113.407,320409690.921,323476348.155,326824445.273,329806789.744,332752173.585,336150763.939,339988837.822,343493145.307,347190577.769,351031729.065,354579951.266,358391660.959,362800431.094,367054766.522,370679086.386,373821592.913,377770329.43,381616370.582,385029775.372,388453600.084,392617970.791,396981216.508,401892486.779,405517162.164,409769824.119,412445296.687,415748658.688,418601777.355,421454398.486,424989790.379,428803511.132,432456854.52,436168309.817,440429544.308,444437095.071,448935728.048
+M3+ : 219438679.075,222267530.175,224332393.544,226278364.334,228061416.138,230215643.324,232172782.448,234504628.015,236421061.697,239011456.366,241238342.087,243459277.444,245910673.814,248257737.137,250697173.86,253435764.77,256120308.813,258906443.406,261774114.223,264619485.215,267337505.271,269989744.109,272394156.816,275587757.728,278566251.614,281217265.98,283938508.485,286404436.251,289731247.118,293475963.896,298835183.777,298825372.478,302674452.827,305468220.991,307778006.773,310151147.934,313173458.151,316485025.034,320021434.511,323077355.161,326420352.445,329392832.498,332334001.345
+M4+ : 167258261.54,169018664.099,170169702.074,171408998.129,172678184.21,174542297.88,176197314.481,178188684.485,179675551.025,181206691.578,182770739.782,184310447.994,186043639.365,187503106.225,189075218.265,190590518.613,192039498.822,193568722.869,195384513.995,197531598.98,199794937.297,201857762.924,203648067.773,205298497.656,207297447.929,209166595.163,211335560.357,213403494.115,215982599.944,217812220.563,219407389.848,220390625.981,222254789.334,224326787.816,226275921.007,228059243.242,230212067.063,232167713.824,234496680.847,236411860.449,238999794.483,241222575.363,243439794.648
+M5+ : 134313649.365,135477159.438,136196817.672,137005820.994,137769760.724,138700953.05,139771547.179,140880407.576,141930211.726,142977632.807,143842633.173,144812767.192,145948345.191,147034259.576,148056975.048,148982372.86,149906356.651,150786461.251,151962680.102,152984670.143,154124211.823,155326146.521,156347262.769,157601323.699,158893792.403,160099781.969,161456844.801,162825797.314,164660597.034,165968679.413,167239991.418,168059814.254,169011270.471,170166556.319,171407668.229,172677613.796,174542050.891,176197203.209,178188635.652,179675530.206,181206682.734,182770736.004,184310446.367
+M6+ : 112988623.729,113604330.491,114101148.546,114670122.231,115204676.16,115867391.528,116515403.557,117224748.967,117928003.354,118635400.007,119442047.656,120221639.85,121227828.314,122013649.304,122723071.082,123375046.523,123987173.824,124577414.065,125396448.853,126260035.556,127007932.607,127769131.823,128506669.89,129227752.951,130055959.631,130795224.249,131554359.115,132362446.977,133043958.328,133663487.747,134298115.272,134298115.272,135470904.677,136193948.868,137004611.199,137769262.394,138700742.103,139771460.969,140880370.713,141930196.063,142977626.099,143842630.336,144812765.992
+M0+_overdue : 379198745.761,387085562.992,393029476.997,397103237.934,401694964.402,408243178.113,412874069.855,417821881.628,422653094.59,426982300.088,431784752.707,436819202.327,442369606.84,446070791.133,450363383.737,454415276.433,458823669.406,463187401.437,466896213.115,470617079.762,475773892.198,480896043.61,484857409.475,488416633.827,492421678.341,496287503.066,500129609.528,503776841.418,507984790.355,512281270.547,518752335.766,523992367.702,523265609.562,528386003.883,532869454.587,537411871.817,542423347.99,546839064.112,551347753.575,555618219.408,560382915.058,565390493.447,570180076.615
+M1+_overdue : 276320742.51,279709767.611,281975900.441,284055059.564,286068888.803,288617598.439,291129247.46,293673094.958,296147503.955,299111683.127,301792895.049,304708081.14,307587673.691,310549240.491,313378646.059,316221222.785,319135202.172,322259254.49,325535775.12,328844790.085,332067982.087,334902428.498,337442446.008,340822693.794,344070219.177,347382995.79,350981899.159,354806344.116,358972375.425,363280200.256,369364403.761,369258345.688,374599694.76,378625250.935,382765953.962,387769265.566,392289956.901,396944693.491,401601110.577,405943767.684,410544412.093,415159819.446,420036527.742
+M2+_overdue : 208788065.293,210915221.733,212478552.738,213966869.646,215468744.145,217497873.476,219643361.381,221979404.626,223965199.046,225951379.489,227793122.016,229674527.291,232052457.158,234487467.215,236664691.009,238902029.588,241204060.004,243314295.212,245887014.296,248555354.071,251199692.444,253391263.62,255450569.831,257798321.095,260210120.317,262419221.945,264816223.023,267640350.092,270542012.561,273338332.884,275925843.902,277029666.332,279259148.238,281474180.871,283511111.084,285480733.899,287974904.217,290435051.356,292932342.961,295365975.613,298280443.861,300921451.428,303794254.659
+M3+_overdue : 161067088.431,162766507.716,164023465.351,165247895.486,166313121.88,167574319.009,168810736.802,170253682.274,171496460.99,173164328.415,174578378.828,175908487.956,177477439.566,179004474.776,180547716.43,182146457.684,183781553.14,185359128.162,187103583.78,188733477.795,190432132.857,192156532.025,193627645.73,195453007.114,197127944.447,198655418.21,200270151.035,201825255.098,203910102.542,205977829.378,208639804.123,208635554.29,210772000.375,212335204.575,213823654.133,215322764.48,217348803.994,219489400.779,221821925.084,223802891.577,225786948.743,227623315.572,229501618.833
+M4+_overdue : 128647340.095,129619311.456,130350450.243,131147247.614,131968118.816,133075717.723,134207795.576,135434289.026,136449012.631,137492658.167,138503193.762,139484259.425,140643337.724,141636651.051,142629767.906,143641543.486,144596206.334,145569084.561,146711627.558,148042576.329,149366774.502,150626453.743,151715124.422,152766756.582,153998692.753,155141999.323,156407824.202,157659962.178,159066090.332,160106019.307,161046355.775,161662800.584,162758027.464,164019737.462,165246295.421,166312018.196,167572891.596,168808869.752,170250736.929,171492856.138,173159826.555,174572359.399,175901250.932
+M5+_overdue : 106426660.277,107222745.778,107715637.33,108245902.599,108828129.499,109456143.606,110239866.34,111058711.704,111810763.217,112616140.231,113302310.138,114000602.876,114842719.741,115635020.961,116380089.105,117071618.129,117705974.433,118297171.935,119081847.417,119779359.475,120589450.805,121343210.615,122032463.453,122861608.864,123685821.906,124453653.48,125265098.842,126117007.21,127129116.863,127876483.22,128633791.209,128869202.436,129613849.156,130348069.827,131146235.85,131967685.995,133075531.654,134207714.97,135434254.339,136448997.759,137492651.826,138503191.059,139484258.278
+M6+_overdue : 90911001.365,91388710.0904,91758845.5144,92187674.8002,92595109.0836,93077296.1851,93593622.1871,94143201.8925,94682720.9672,95247601.9197,95844800.9678,96388790.6385,97187439.2892,97829095.7938,98415595.3227,98893438.7126,99342041.1585,99799866.426,100329195.597,100888870.977,101463521.18,102011184.628,102507080.398,103009300.537,103560359.749,104054360.781,104547884.773,105077041.623,105547936.083,105985898.036,106415984.514,106415984.514,107218437.108,107713718.849,108245094.282,108827783.559,109455997.597,110239804.321,111058685.228,111810751.973,112616135.411,113302308.094,114000602.012
+********************************* 保存文件耗时： 167.125618935  seconds ***********************************
+estimator order exposure over 2017-11-29 10:13:59
+-------计算敞口结束------
+计算敞口全部完成！
+---------end predict exposure-------
+--------begin calculate the difference-------
+/usr/local/lib/python2.7/site-packages/subprocess32.py:472: RuntimeWarning: The _posixsubprocess module is not being used. Child process reliability may suffer if your program uses threads.
+  "program uses threads.", RuntimeWarning)
+------------end of preparing data--------
+-----------end of finding difference-----
+--------end calculate the difference-------
+--------begin report future risk-------
+/usr/local/lib/python2.7/site-packages/subprocess32.py:472: RuntimeWarning: The _posixsubprocess module is not being used. Child process reliability may suffer if your program uses threads.
+  "program uses threads.", RuntimeWarning)
+-------end future risk--------
+-------sending email-------
+/usr/local/lib/python2.7/site-packages/subprocess32.py:472: RuntimeWarning: The _posixsubprocess module is not being used. Child process reliability may suffer if your program uses threads.
+  "program uses threads.", RuntimeWarning)
+Traceback (most recent call last):
+  File "CheckDiffSend.py", line 7, in <module>
+    import MySQLdb
+ImportError: No module named MySQLdb
+-------end sending email------
+=======END======
+copy today's file as predition file
+end of copy
+---------begin predict exposure-------
+2017-12-01 10:00:05  -  new session: 201712011000050e399a0a02b32d81	total lines: 7,553
+2017-12-01 10:00:05  -  file [0]: [0, 7,553), data/input/fenqi_cycle_amount_old_rate.txt
+downloading 7,553 records into 1 file
+2017-12-01 10:00:05  -  file [0] start
+2017-12-01 10:00:06  -  file [0] OK. total: 405.3 KB
+download OK
+2017-12-01 10:00:08  -  new session: 2017120110000756399a0a02b3ca40	total lines: 181,238
+2017-12-01 10:00:08  -  file [0]: [0, 181,238), data/input/fenqi_cycle_fenqi_diff_amount_rate_old_file.csv
+downloading 181,238 records into 1 file
+2017-12-01 10:00:08  -  file [0] start
+2017-12-01 10:00:12  -  file [0] OK. total: 10.7 MB
+total: 10.7 MB, time: 3 s, average speed: 3.6 MB/s
+download OK
+2017-12-01 10:00:14  -  new session: 201712011000136c399a0a02b65371	total lines: 1,615
+2017-12-01 10:00:14  -  file [0]: [0, 1,615), data/input/qudian_amount_data_file.csv
+downloading 1,615 records into 1 file
+2017-12-01 10:00:14  -  file [0] start
+2017-12-01 10:00:15  -  file [0] OK. total: 45.9 KB
+download OK
+2017-12-01 10:00:16  -  new session: 201712011000166c399a0a02b65390	total lines: 30,813
+2017-12-01 10:00:16  -  file [0]: [0, 30,813), data/input/order_create_cycle_fenqi_capital_rate.csv
+downloading 30,813 records into 1 file
+2017-12-01 10:00:16  -  file [0] start
+2017-12-01 10:00:17  -  file [0] OK. total: 1.6 MB
+total: 1.6 MB, time: 1 s, average speed: 1.6 MB/s
+download OK
+2017-12-01 10:00:18  -  new session: 2017120110001802399a0a02b44cee	total lines: 7,947
+2017-12-01 10:00:18  -  file [0]: [0, 7,947), data/input/fenqi_cycle_fenqi_mean_overdue_rate.csv
+downloading 7,947 records into 1 file
+2017-12-01 10:00:18  -  file [0] start
+2017-12-01 10:00:21  -  file [0] OK. total: 5.4 MB
+total: 5.4 MB, time: 2 s, average speed: 2.7 MB/s
+download OK
+2017-12-01 10:00:22  -  new session: 2017120110002256399a0a02b3cb31	total lines: 181,226
+2017-12-01 10:00:22  -  file [0]: [0, 181,226), data/input/order_created_deadline_overdue_rate.csv
+downloading 181,226 records into 1 file
+2017-12-01 10:00:22  -  file [0] start
+2017-12-01 10:00:27  -  [0] 14%, 25,883 records downloaded, 4.9 MB/s
+2017-12-01 10:00:32  -  [0] 49%, 88,804 records downloaded, 8.6 MB/s
+2017-12-01 10:00:35  -  file [0] OK. total: 97 MB
+total: 97 MB, time: 12 s, average speed: 8.1 MB/s
+download OK
+2017-12-01 10:00:36  -  new session: 201712011000363f399a0a00c20019	total lines: 181,226
+2017-12-01 10:00:36  -  file [0]: [0, 181,226), data/input/order_bill_now_data_file.csv
+downloading 181,226 records into 1 file
+2017-12-01 10:00:36  -  file [0] start
+2017-12-01 10:00:41  -  [0] 17%, 32,452 records downloaded, 6.9 MB/s
+2017-12-01 10:00:46  -  [0] 48%, 87,130 records downloaded, 8.1 MB/s
+2017-12-01 10:00:51  -  file [0] OK. total: 106.8 MB
+total: 106.8 MB, time: 14 s, average speed: 7.6 MB/s
+download OK
+2017-12-01 10:00:52  -  new session: 201712011000522d3c9b0a02b349c7	total lines: 1
+2017-12-01 10:00:52  -  file [0]: [0, 1), data/input/jituan_overdue_flow_data_file.csv
+downloading 1 records into 1 file
+2017-12-01 10:00:52  -  file [0] start
+2017-12-01 10:00:53  -  file [0] OK. total: 2.4 KB
+download OK
+-------数据准备结束------
+deal_data_format.py:171: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df_tmp[order_dt] = self.this_dt
+deal data format: config file: ../../data/config/config_data version:  test_1123 ,this_dt: 2017-12-01
+2017-12-01 10:00:53
+加载文件......
+will deal list dict init .....
+---- 2017-11,5,9218839000.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-11,6,643506352.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-12,5,7839249000.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2017-12,6,602771377.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-01,5,8108822824.0 ------------
+---- 2018-01,6,611362700.0 ------------
+---- 2018-02,5,5090949650.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-02,6,453855900.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-03,5,9271815030.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-03,6,612328200.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-04,5,8500037300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-04,6,591815300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-05,5,8377039428.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-05,6,620192700.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-06,5,9298598710.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-06,6,695169800.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-07,5,8314859786.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-07,6,678154300.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-08,5,8275879098.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-08,6,689439900.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-09,5,8268954021.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-09,6,706740400.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-10,5,8391437746.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-10,6,715603700.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-11,5,9514930570.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-11,6,822043800.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-12,5,8566066100.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-12,6,816334600.0 ------------
+如果该月没有预估过 需要初始化 12
+加载完毕. 2017-12-01 10:00:54
+deal mean parameters: config file: ../../data/config/config_data
+will count fitting parameters.....
+deal parameter rules: config file: ../../data/config/config_data
+len: 4 ,sys: ['deal_parameters_rules.py', '../../data/config/config_data', 'laifenqi', '2017-12-01']
+this_dt: 2017-12-01
+will count fitting parameters.....
+df: 181226
+-------数据处理结束------
+./../lib/create_new_bill.py:105: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df[dt] = this_dt
+config file: ../../data/config/config_data ,count end month: 2018-01-10 ,this date type: day ,this migration coefficient: 1.0 ,create risk coefficient: 1.0
+len: 9 ,sys: ['exposure_estimator.py', '../../data/config/config_data', '2018-01-10', 'day', '1.0', '1.0', 'month', 'laifenqi', '2017-12-01']
+this_dt: 2017-12-01
+will begin estimator order exposure..... 2017-12-01 10:01:54
+创建账单表..... 2017-12-01 10:01:54
+bill over! 2017-12-01 10:02:22
+init dict over! 2017-12-01 10:02:24
+账单表创建完毕。 2017-12-01 10:02:24
+********************************* 初始化读文件耗时： 29.9383368492  seconds *******************************
+product_parameter_dict: {'laifenqi,6,2,6': ['1.0', '136.837216775', '1.05393848366', '129.079060978'], 'laifenqi,999,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,6,2,3': ['1.0', '132.13916477', '1.0', '266.997698061'], 'laifenqi,6,2,2': ['1.0', '138.28159746', '1.0', '246.031319376'], 'laifenqi,6,2,9': ['1.0', '206.261180139', '1.0', '124.464530563'], 'laifenqi,8,2,6': ['1.0', '33.0638031377', '1.049', '31.5109402815'], 'laifenqi,5,2,12': ['1.0', '14.7597127765', '1.0', '47.7031140945'], 'laifenqi,8,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,5,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,8,2,12': ['1.0', '58.6654335515', '1.0', '79.864962906'], 'laifenqi,6,2,12': ['1.0', '170.197795404', '1.0', '367.049155491'], 'laifenqi,5,1,1': ['1.0', '359.572649888', '1.0', '1016.78308813'], 'laifenqi,6,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,5,2,9': ['1.0', '10.6798802246', '1.0', '67.1685495504'], 'laifenqi,5,2,6': ['1.0', '558.955641544', '1.17252963796', '265.659450402'], 'laifenqi,5,2,3': ['1.0', '371.641402572', '1.04377320918', '216.412851884'], 'laifenqi,5,2,1': ['1.0', '724.360688476', '1.0', '710.27832597']}
+账单数量: 207045
+产品: laifenqi,6,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.05393848366 ,after adjustment: 1.0 1.05393848366 2017-12-01 10:02:24
+产品: laifenqi,6,2,6 ,migration rate: 1.0 ,risk rate: 1.05393848366 2017-12-01 10:02:24
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 207045
+-------------------该产品账单表数量: 26166
+-------------------剩余账单表数量: 180879
+**************************************** 计算产品 laifenqi,6,2,6 的逾期金额耗时： 13.6464848518  seconds **********************************
+产品: laifenqi,6,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:03:40
+产品: laifenqi,6,2,3 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:03:40
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 180879
+-------------------该产品账单表数量: 12100
+-------------------剩余账单表数量: 168779
+**************************************** 计算产品 laifenqi,6,2,3 的逾期金额耗时： 6.7197239399  seconds **********************************
+产品: laifenqi,6,2,2 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:04:21
+产品: laifenqi,6,2,2 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:04:21
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 168779
+-------------------该产品账单表数量: 8980
+-------------------剩余账单表数量: 159799
+**************************************** 计算产品 laifenqi,6,2,2 的逾期金额耗时： 5.72189903259  seconds **********************************
+产品: laifenqi,6,2,9 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:04:53
+产品: laifenqi,6,2,9 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:04:53
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 159799
+-------------------该产品账单表数量: 39189
+-------------------剩余账单表数量: 120610
+**************************************** 计算产品 laifenqi,6,2,9 的逾期金额耗时： 20.090736866  seconds **********************************
+产品: laifenqi,8,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.049 ,after adjustment: 1.0 1.049 2017-12-01 10:06:33
+产品: laifenqi,8,2,6 ,migration rate: 1.0 ,risk rate: 1.049 2017-12-01 10:06:33
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 120610
+-------------------该产品账单表数量: 2978
+-------------------剩余账单表数量: 117632
+产品: laifenqi,5,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:06:35
+产品: laifenqi,5,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:06:35
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 117632
+-------------------该产品账单表数量: 7315
+-------------------剩余账单表数量: 110317
+**************************************** 计算产品 laifenqi,5,2,12 的逾期金额耗时： 2.4715590477  seconds **********************************
+产品: laifenqi,8,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:06:43
+产品: laifenqi,8,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:06:43
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 110317
+-------------------该产品账单表数量: 21218
+-------------------剩余账单表数量: 89099
+产品: laifenqi,6,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:06:55
+产品: laifenqi,6,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:06:55
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 89099
+-------------------该产品账单表数量: 50255
+-------------------剩余账单表数量: 38844
+**************************************** 计算产品 laifenqi,6,2,12 的逾期金额耗时： 24.315557003  seconds **********************************
+产品: laifenqi,5,1,1 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:08:41
+产品: laifenqi,5,1,1 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:08:41
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 38844
+-------------------该产品账单表数量: 2031
+-------------------剩余账单表数量: 36813
+**************************************** 计算产品 laifenqi,5,1,1 的逾期金额耗时： 0.963733911514  seconds **********************************
+产品: laifenqi,5,2,9 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:08:48
+产品: laifenqi,5,2,9 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:08:48
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 36813
+-------------------该产品账单表数量: 5412
+-------------------剩余账单表数量: 31401
+**************************************** 计算产品 laifenqi,5,2,9 的逾期金额耗时： 2.44725990295  seconds **********************************
+产品: laifenqi,5,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.17252963796 ,after adjustment: 1.0 1.17252963796 2017-12-01 10:08:56
+产品: laifenqi,5,2,6 ,migration rate: 1.0 ,risk rate: 1.17252963796 2017-12-01 10:08:56
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 31401
+-------------------该产品账单表数量: 11406
+-------------------剩余账单表数量: 19995
+**************************************** 计算产品 laifenqi,5,2,6 的逾期金额耗时： 3.12492203712  seconds **********************************
+产品: laifenqi,5,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.04377320918 ,after adjustment: 1.0 1.04377320918 2017-12-01 10:09:27
+产品: laifenqi,5,2,3 ,migration rate: 1.0 ,risk rate: 1.04377320918 2017-12-01 10:09:27
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 19995
+-------------------该产品账单表数量: 5418
+-------------------剩余账单表数量: 14577
+**************************************** 计算产品 laifenqi,5,2,3 的逾期金额耗时： 1.61067700386  seconds **********************************
+产品: laifenqi,5,2,1 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-01 10:09:44
+产品: laifenqi,5,2,1 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-01 10:09:44
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 14577
+-------------------该产品账单表数量: 1877
+-------------------剩余账单表数量: 12700
+**************************************** 计算产品 laifenqi,5,2,1 的逾期金额耗时： 0.648061990738  seconds **********************************
+产品: laifenqi,5,999,999 ,migration rate;risk rate,before adjustment: 1.0 1.25
+after adjustment: 1.0 1.25 2017-12-01 10:09:52
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 12700
+-------------------该产品账单表数量: 10203
+-------------------剩余账单表数量: 2497
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+产品: laifenqi,6,999,999 ,migration rate;risk rate,before adjustment: 1.0 1.25
+after adjustment: 1.0 1.25 2017-12-01 10:10:14
+-------------------总账单表数量: 207045
+-------------------剩余账单表数量: 2497
+-------------------该产品账单表数量: 2497
+-------------------剩余账单表数量: 0
+all product bills over! 2017-12-01 10:10:22
+********************************* 计算各逾期金额、敞口的总耗时： 478.048120975  seconds *******************
+Day :  2017-12-01,2017-12-02,2017-12-03,2017-12-04,2017-12-05,2017-12-06,2017-12-07,2017-12-08,2017-12-09,2017-12-10,2017-12-11,2017-12-12,2017-12-13,2017-12-14,2017-12-15,2017-12-16,2017-12-17,2017-12-18,2017-12-19,2017-12-20,2017-12-21,2017-12-22,2017-12-23,2017-12-24,2017-12-25,2017-12-26,2017-12-27,2017-12-28,2017-12-29,2017-12-30,2017-12-31,2018-01-01,2018-01-02,2018-01-03,2018-01-04,2018-01-05,2018-01-06,2018-01-07,2018-01-08,2018-01-09,2018-01-10
+M0+ : 620419067.421,627213229.852,638995255.696,643936390.402,649381204.539,655851511.579,661826098.783,668905865.507,676389716.012,685453578.6,688780316.651,693913066.208,697997922.381,703042752.376,709245970.58,712926579.257,717080286.038,725535626.714,732713330.462,736681989.717,740099391.112,744190270.82,747645455.623,751801217.914,754555532.207,758281916.567,761266193.168,765072283.122,766098037.623,763321029.986,772102226.557,777218789.802,783096067.433,790511719.538,794373099.473,798900813.473,803051501.467,812911007.518,820303269.815,827498918.155,835270565.206
+M1+ : 422998982.182,425715372.776,428420292.517,431800035.61,435437631.55,438832532.405,442225521.537,446144131.634,449735131.847,453697433.511,457214284.881,461058979.034,464579252.12,468135293.626,471823110.799,475771535.576,479694236.886,484000197.832,488040849.06,491347175.607,494249802.159,498075317.801,501524742.894,505282707.069,509112870.132,513077994.44,517133212.405,521861088.916,531459130.783,530729639.767,534509872.354,539716648.991,545294708.649,552151001.128,557779435.012,563361382.358,568943433.583,574322509.565,579864738.526,585852302.651,592130160.831
+M2+ : 310850974.976,313137666.254,315464458.124,318475951.805,321751873.324,325245465.111,328228932.3,331530734.954,334441489.448,337346534.865,340648601.516,344411987.498,347819210.421,351437820.397,355177164.999,358633273.143,362330753.515,366643520.331,370753707.527,374256632.348,377245173.588,381007336.416,384648498.302,387869118.773,391070031.258,394993377.192,399081697.491,403686162.606,406948172.842,410993445.868,413490947.568,416601676.913,419018068.726,421419689.639,424411735.055,427631527.731,430639529.068,433680197.597,437184271.806,440439819.093,444004754.248
+M3+ : 227933720.586,229906130.949,231705460.104,233884062.555,235890442.238,238297003.561,240260465.867,242896387.56,245155921.677,247389231.175,249865116.116,252216131.751,254660455.199,257405666.549,260078267.426,262881985.342,265719569.287,268546341.526,271247131.445,273884236.448,276266621.502,279434956.986,282390612.22,285051477.457,287755136.542,290223257.333,293455691.17,297168065.261,302456237.671,302434759.03,306187228.01,308927959.734,311143301.649,313467683.731,316363017.248,319605501.62,322968865.521,325929916.768,329118241.799,331999776.273,334796064.834
+M4+ : 172779829.6,174023402.999,175299999.376,177177709.845,178869777.85,180883566.415,182392253.046,183956864.623,185543831.552,187109163.788,188878809.326,190363997.776,191967732.939,193519727.538,194996267.815,196559090.696,198414251.123,200606793.134,202912548.965,205000217.063,206812285.501,208504034.653,210542246.229,212453784.075,214661017.226,216751884.894,219362608.569,221216613.04,222849917.474,223873230.494,225778207.578,227899690.539,229891785.487,231699072.38,233881213.511,235888374.626,238290651.656,240254953.702,242882695.804,245140484.991,247368360.976
+M5+ : 138649509.482,139457589.959,140225794.34,141166485.351,142232861.107,143349949.737,144396859.207,145441875.789,146311642.206,147284318.834,148421005.643,149510695.424,150536521.44,151465227.337,152396112.917,153279504.397,154456481.898,155478860.615,156620467.609,157831389.369,158856855.63,160122023.254,161413843.03,162621009.43,163985029.419,165355107.735,167210324.232,168526295.67,169804121.815,170627322.417,171591008.332,172758735.671,174014826.291,175296289.894,177176126.286,178869104.668,180883267.9,182392124.968,183956809.269,185543807.68,187109153.653
+M6+ : 116450766.627,117026250.394,117566615.223,118227933.457,118879088.041,119590262.296,120292899.147,120999023.839,121805169.156,122588163.437,123597767.925,124382493.067,125097754.248,125752565.425,126364000.841,126953093.843,127778536.967,128643696.546,129392265.549,130151008.752,130889042.839,131609034.131,132438764.198,133176153.707,133937262.027,134747332.788,135434510.557,136055442.066,136696099.485,136696099.485,137888154.115,138633239.906,139451027.788,140222920.115,141165268.508,142232329.202,143349730.523,144396762.607,145441834.812,146311624.873,147284311.495
+M0+_overdue : 406492852.589,410530740.607,417837492.511,420719904.99,424185616.465,428264664.488,432001731.845,436284978.663,440844563.419,445854983.428,448117998.163,451911973.382,455038300.383,458847873.996,462298821.232,464801936.252,467506391.535,472608928.783,477343444.601,480123794.676,482694807.197,485862471.439,488893278.178,491980570.568,494719343.079,498452654.093,501977531.266,506055089.558,510248640.042,506740312.622,513124307.52,517252738.892,521512235.921,526012633.572,529384278.055,533206829.171,536532310.903,541912050.947,546588086.543,551070930.418,555412151.946
+M1+_overdue : 285533242.997,287512039.44,289411216.59,291847880.464,294240420.147,296649628.208,298960153.144,301738598.429,304219221.186,306890345.583,309519611.563,312212709.431,314744639.468,317296182.211,319900274.108,322670625.56,325564702.658,328480408.951,331295626.556,333736616.069,335903778.837,338814546.475,341594806.408,344446574.813,347480956.991,350683675.692,354153001.587,357620156.98,362564659.583,362243802.092,366351807.777,369550295.944,372810732.24,376825043.957,380413064.48,384075532.574,387753434.582,391174547.901,394802701.001,398421879.913,402167470.764
+M2+_overdue : 215546899.726,217045115.664,218531443.752,220545135.962,222670041.539,224990670.705,226943543.632,228907287.886,230717353.577,232570979.636,234911212.359,237307470.86,239441138.943,241637990.277,243887644.895,245954902.047,248467969.704,251084117.94,253661832.529,255793831.702,257773202.993,260045337.835,262372991.834,264499209.164,266796176.153,269500738.316,272262020.665,274924421.063,277360406.127,278389213.392,280535886.855,282664754.038,284515633.799,286304145.016,288570184.581,290814590.716,293067372.874,295249888.808,297841830.631,300178088.716,302656211.77
+M3+_overdue : 166430299.169,167684158.586,168766831.697,170034701.018,171284712.043,172750100.194,174006328.741,175685113.397,177104266.605,178439899.884,180013159.485,181537397.737,183074263.685,184672189.451,186298083.867,187879126.623,189619418.546,191247660.096,192938538.787,194657363.842,196115525.382,197928745.963,199592872.575,201114146.804,202723399.81,204276215.969,206326337.298,208363833.85,211010972.955,211000823.208,213191269.245,214819949.413,216305075.131,217787193.534,219764455.599,221871147.082,224145436.295,226084579.45,228012760.056,229809686.601,231627194.038
+M4+_overdue : 132297546.852,133114822.322,133952256.533,135064489.122,136202690.174,137435076.955,138455706.258,139506295.773,140521196.528,141510927.643,142674747.08,143672701.462,144673028.204,145696473.054,146662045.877,147643924.147,148794655.494,150136416.517,151470148.658,152732717.029,153827654.442,154889017.937,156129019.223,157279875.377,158554829.942,159813821.366,161229762.522,162275429.817,163246569.039,163871712.328,165052240.308,166408587.65,167675220.334,168762875.631,170032974.993,171283350.801,172748191.426,174004297.077,175680165.715,177098068.287,178431870.255
+M5+_overdue : 109400340.956,109953231.761,110551739.995,111180657.654,111965085.879,112787965.773,113538017.33,114342993.841,115030835.827,115731262.326,116574260.155,117368159.654,118113548.235,118807809.46,119444722.52,120036835.419,120823322.453,121521037.989,122332101.903,123087745.537,123777411.171,124608525.567,125433714.0,126201201.344,127013487.905,127866114.762,128884177.49,129632760.315,130414345.389,130650255.455,131468612.961,132283175.705,133108949.717,133949712.444,135063410.373,136202225.576,137434877.538,138455620.625,139506259.137,140521180.881,141510921.014
+M6+_overdue : 93181877.733,93632744.5149,94054971.5345,94537384.5502,95056081.6582,95608293.2952,96147570.5384,96713052.1043,97310999.8564,97857385.5968,98657462.4918,99299565.0276,99887142.7126,100366576.154,100816405.24,101273712.116,101804330.473,102364431.715,102940236.573,103488199.566,103985874.262,104488048.891,105041727.244,105537352.003,106031005.724,106560703.726,107033139.476,107473320.056,107926010.905,107926010.905,108805762.704,109389853.651,109948950.008,110549865.541,111179861.866,111964744.135,112787821.095,113537953.157,114342966.406,115030824.187,115731257.403
+********************************* 保存文件耗时： 157.340585947  seconds ***********************************
+estimator order exposure over 2017-12-01 10:13:00
+-------计算敞口结束------
+计算敞口全部完成！
+---------end predict exposure-------
+--------begin calculate the difference-------
+------------end of preparing data--------
+-----------end of finding difference-----
+--------end calculate the difference-------
+--------begin report future risk-------
+-------end future risk--------
+-------sending email-------
+over
+-------end sending email------
+=======END======
+copy today's file as predition file
+end of copy
+---------begin predict exposure-------
+2017-12-02 10:00:06  -  new session: 2017120210000536399a0a02c9b622	total lines: 7,566
+2017-12-02 10:00:06  -  file [0]: [0, 7,566), data/input/fenqi_cycle_amount_old_rate.txt
+downloading 7,566 records into 1 file
+2017-12-02 10:00:06  -  file [0] start
+2017-12-02 10:00:06  -  file [0] OK. total: 406.6 KB
+download OK
+2017-12-02 10:00:08  -  new session: 2017120210000794399a0a02cef754	total lines: 181,587
+2017-12-02 10:00:08  -  file [0]: [0, 181,587), data/input/fenqi_cycle_fenqi_diff_amount_rate_old_file.csv
+downloading 181,587 records into 1 file
+2017-12-02 10:00:08  -  file [0] start
+2017-12-02 10:00:10  -  file [0] OK. total: 10.8 MB
+total: 10.8 MB, time: 2 s, average speed: 5.4 MB/s
+download OK
+2017-12-02 10:00:13  -  new session: 201712021000127c399a0a02ce5d51	total lines: 1,618
+2017-12-02 10:00:13  -  file [0]: [0, 1,618), data/input/qudian_amount_data_file.csv
+downloading 1,618 records into 1 file
+2017-12-02 10:00:13  -  file [0] start
+2017-12-02 10:00:13  -  file [0] OK. total: 46 KB
+download OK
+2017-12-02 10:00:16  -  new session: 201712021000153a399a0a02ca2f72	total lines: 30,888
+2017-12-02 10:00:16  -  file [0]: [0, 30,888), data/input/order_create_cycle_fenqi_capital_rate.csv
+downloading 30,888 records into 1 file
+2017-12-02 10:00:16  -  file [0] start
+2017-12-02 10:00:16  -  file [0] OK. total: 1.6 MB
+download OK
+2017-12-02 10:00:18  -  new session: 201712021000180e399a0a02c944a5	total lines: 7,997
+2017-12-02 10:00:18  -  file [0]: [0, 7,997), data/input/fenqi_cycle_fenqi_mean_overdue_rate.csv
+downloading 7,997 records into 1 file
+2017-12-02 10:00:18  -  file [0] start
+2017-12-02 10:00:20  -  file [0] OK. total: 5.4 MB
+total: 5.4 MB, time: 1 s, average speed: 5.4 MB/s
+download OK
+2017-12-02 10:00:22  -  new session: 2017120210002257389a0a02ca9d85	total lines: 181,575
+2017-12-02 10:00:22  -  file [0]: [0, 181,575), data/input/order_created_deadline_overdue_rate.csv
+downloading 181,575 records into 1 file
+2017-12-02 10:00:22  -  file [0] start
+2017-12-02 10:00:27  -  [0] 1%, 2,106 records downloaded, 437.5 KB/s
+2017-12-02 10:00:32  -  [0] 29%, 53,283 records downloaded, 9 MB/s
+2017-12-02 10:00:36  -  file [0] OK. total: 97.3 MB
+total: 97.3 MB, time: 14 s, average speed: 7 MB/s
+download OK
+2017-12-02 10:00:38  -  new session: 201712021000377c399a0a02ce5f05	total lines: 181,575
+2017-12-02 10:00:38  -  file [0]: [0, 181,575), data/input/order_bill_now_data_file.csv
+downloading 181,575 records into 1 file
+2017-12-02 10:00:38  -  file [0] start
+2017-12-02 10:00:43  -  [0] 8%, 15,418 records downloaded, 3.4 MB/s
+2017-12-02 10:00:48  -  [0] 42%, 77,528 records downloaded, 10.5 MB/s
+2017-12-02 10:00:51  -  file [0] OK. total: 107.1 MB
+total: 107.1 MB, time: 13 s, average speed: 8.2 MB/s
+download OK
+2017-12-02 10:00:53  -  new session: 2017120210005232399a0a02c9c894	total lines: 1
+2017-12-02 10:00:53  -  file [0]: [0, 1), data/input/jituan_overdue_flow_data_file.csv
+downloading 1 records into 1 file
+2017-12-02 10:00:53  -  file [0] start
+2017-12-02 10:00:53  -  file [0] OK. total: 2.4 KB
+download OK
+-------数据准备结束------
+deal_data_format.py:171: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df_tmp[order_dt] = self.this_dt
+deal data format: config file: ../../data/config/config_data version:  test_1123 ,this_dt: 2017-12-02
+2017-12-02 10:00:54
+加载文件......
+will deal list dict init .....
+---- 2017-11,5,9218839000.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-11,6,643506352.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-12,5,7839249000.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2017-12,6,602771377.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-01,5,8108822824.0 ------------
+---- 2018-01,6,611362700.0 ------------
+---- 2018-02,5,5090949650.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-02,6,453855900.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-03,5,9271815030.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-03,6,612328200.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-04,5,8500037300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-04,6,591815300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-05,5,8377039428.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-05,6,620192700.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-06,5,9298598710.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-06,6,695169800.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-07,5,8314859786.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-07,6,678154300.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-08,5,8275879098.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-08,6,689439900.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-09,5,8268954021.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-09,6,706740400.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-10,5,8391437746.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-10,6,715603700.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-11,5,9514930570.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-11,6,822043800.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-12,5,8566066100.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-12,6,816334600.0 ------------
+如果该月没有预估过 需要初始化 12
+加载完毕. 2017-12-02 10:00:54
+deal mean parameters: config file: ../../data/config/config_data
+will count fitting parameters.....
+deal parameter rules: config file: ../../data/config/config_data
+len: 4 ,sys: ['deal_parameters_rules.py', '../../data/config/config_data', 'laifenqi', '2017-12-02']
+this_dt: 2017-12-02
+will count fitting parameters.....
+df: 181575
+-------数据处理结束------
+./../lib/create_new_bill.py:105: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df[dt] = this_dt
+/home/risk/lib/python2.7/site-packages/pandas/core/frame.py:2746: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  **kwargs)
+/home/risk/lib/python2.7/site-packages/pandas/core/reshape/merge.py:1457: RuntimeWarning: divide by zero encountered in long_scalars
+  stride //= shape[i]
+config file: ../../data/config/config_data ,count end month: 2018-01-10 ,this date type: day ,this migration coefficient: 1.0 ,create risk coefficient: 1.0
+len: 9 ,sys: ['exposure_estimator.py', '../../data/config/config_data', '2018-01-10', 'day', '1.0', '1.0', 'month', 'laifenqi', '2017-12-02']
+this_dt: 2017-12-02
+will begin estimator order exposure..... 2017-12-02 10:01:56
+创建账单表..... 2017-12-02 10:01:56
+bill over! 2017-12-02 10:02:23
+init dict over! 2017-12-02 10:02:26
+账单表创建完毕。 2017-12-02 10:02:26
+********************************* 初始化读文件耗时： 29.9398930073  seconds *******************************
+product_parameter_dict: {'laifenqi,6,2,6': ['1.0', '136.837216775', '1.05393848366', '129.079060978'], 'laifenqi,999,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,6,2,3': ['1.0', '132.13916477', '1.0', '266.997698061'], 'laifenqi,6,2,2': ['1.0', '138.28159746', '1.0', '246.031319376'], 'laifenqi,6,2,9': ['1.0', '206.261180139', '1.0', '124.464530563'], 'laifenqi,8,2,6': ['1.0', '33.0638031377', '1.049', '31.5109402815'], 'laifenqi,5,2,12': ['1.0', '14.7597127765', '1.0', '47.7031140945'], 'laifenqi,8,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,5,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,8,2,12': ['1.0', '58.6654335515', '1.0', '79.864962906'], 'laifenqi,6,2,12': ['1.0', '170.197795404', '1.0', '367.049155491'], 'laifenqi,5,1,1': ['1.0', '359.572649888', '1.0', '1016.78308813'], 'laifenqi,6,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,5,2,9': ['1.0', '10.6798802246', '1.0', '67.1685495504'], 'laifenqi,5,2,6': ['1.0', '558.955641544', '1.17252963796', '265.659450402'], 'laifenqi,5,2,3': ['1.0', '371.641402572', '1.04377320918', '216.412851884'], 'laifenqi,5,2,1': ['1.0', '724.360688476', '1.0', '710.27832597']}
+账单数量: 207350
+产品: laifenqi,6,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.05393848366 ,after adjustment: 1.0 1.05393848366 2017-12-02 10:02:26
+产品: laifenqi,6,2,6 ,migration rate: 1.0 ,risk rate: 1.05393848366 2017-12-02 10:02:26
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 207350
+-------------------该产品账单表数量: 26208
+-------------------剩余账单表数量: 181142
+**************************************** 计算产品 laifenqi,6,2,6 的逾期金额耗时： 13.3468420506  seconds **********************************
+产品: laifenqi,6,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:03:39
+产品: laifenqi,6,2,3 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:03:39
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 181142
+-------------------该产品账单表数量: 12121
+-------------------剩余账单表数量: 169021
+**************************************** 计算产品 laifenqi,6,2,3 的逾期金额耗时： 6.54098415375  seconds **********************************
+产品: laifenqi,6,2,2 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:04:18
+产品: laifenqi,6,2,2 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:04:18
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 169021
+-------------------该产品账单表数量: 8998
+-------------------剩余账单表数量: 160023
+**************************************** 计算产品 laifenqi,6,2,2 的逾期金额耗时： 5.53629517555  seconds **********************************
+产品: laifenqi,6,2,9 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:04:49
+产品: laifenqi,6,2,9 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:04:49
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 160023
+-------------------该产品账单表数量: 39252
+-------------------剩余账单表数量: 120771
+**************************************** 计算产品 laifenqi,6,2,9 的逾期金额耗时： 19.8001990318  seconds **********************************
+产品: laifenqi,8,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.049 ,after adjustment: 1.0 1.049 2017-12-02 10:06:25
+产品: laifenqi,8,2,6 ,migration rate: 1.0 ,risk rate: 1.049 2017-12-02 10:06:25
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 120771
+-------------------该产品账单表数量: 2978
+-------------------剩余账单表数量: 117793
+产品: laifenqi,5,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:06:27
+产品: laifenqi,5,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:06:27
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 117793
+-------------------该产品账单表数量: 7327
+-------------------剩余账单表数量: 110466
+**************************************** 计算产品 laifenqi,5,2,12 的逾期金额耗时： 2.44365382195  seconds **********************************
+产品: laifenqi,8,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:06:35
+产品: laifenqi,8,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:06:35
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 110466
+-------------------该产品账单表数量: 21264
+-------------------剩余账单表数量: 89202
+产品: laifenqi,6,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:06:47
+产品: laifenqi,6,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:06:47
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 89202
+-------------------该产品账单表数量: 50339
+-------------------剩余账单表数量: 38863
+**************************************** 计算产品 laifenqi,6,2,12 的逾期金额耗时： 24.1677200794  seconds **********************************
+产品: laifenqi,5,1,1 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:08:29
+产品: laifenqi,5,1,1 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:08:29
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 38863
+-------------------该产品账单表数量: 2032
+-------------------剩余账单表数量: 36831
+**************************************** 计算产品 laifenqi,5,1,1 的逾期金额耗时： 0.858000993729  seconds **********************************
+产品: laifenqi,5,2,9 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:08:36
+产品: laifenqi,5,2,9 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:08:36
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 36831
+-------------------该产品账单表数量: 5421
+-------------------剩余账单表数量: 31410
+**************************************** 计算产品 laifenqi,5,2,9 的逾期金额耗时： 2.42132902145  seconds **********************************
+产品: laifenqi,5,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.17252963796 ,after adjustment: 1.0 1.17252963796 2017-12-02 10:08:44
+产品: laifenqi,5,2,6 ,migration rate: 1.0 ,risk rate: 1.17252963796 2017-12-02 10:08:44
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 31410
+-------------------该产品账单表数量: 11412
+-------------------剩余账单表数量: 19998
+**************************************** 计算产品 laifenqi,5,2,6 的逾期金额耗时： 3.0714840889  seconds **********************************
+产品: laifenqi,5,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.04377320918 ,after adjustment: 1.0 1.04377320918 2017-12-02 10:09:14
+产品: laifenqi,5,2,3 ,migration rate: 1.0 ,risk rate: 1.04377320918 2017-12-02 10:09:14
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 19998
+-------------------该产品账单表数量: 5421
+-------------------剩余账单表数量: 14577
+**************************************** 计算产品 laifenqi,5,2,3 的逾期金额耗时： 1.51975798607  seconds **********************************
+产品: laifenqi,5,2,1 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-02 10:09:30
+产品: laifenqi,5,2,1 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-02 10:09:30
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 14577
+-------------------该产品账单表数量: 1878
+-------------------剩余账单表数量: 12699
+**************************************** 计算产品 laifenqi,5,2,1 的逾期金额耗时： 0.603009939194  seconds **********************************
+产品: laifenqi,5,999,999 ,migration rate;risk rate,before adjustment: 1.0 1.25
+after adjustment: 1.0 1.25 2017-12-02 10:09:38
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 12699
+-------------------该产品账单表数量: 10203
+-------------------剩余账单表数量: 2496
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+产品: laifenqi,6,999,999 ,migration rate;risk rate,before adjustment: 1.0 1.25
+after adjustment: 1.0 1.25 2017-12-02 10:09:59
+-------------------总账单表数量: 207350
+-------------------剩余账单表数量: 2496
+-------------------该产品账单表数量: 2496
+-------------------剩余账单表数量: 0
+all product bills over! 2017-12-02 10:10:08
+********************************* 计算各逾期金额、敞口的总耗时： 462.072266817  seconds *******************
+Day :  2017-12-02,2017-12-03,2017-12-04,2017-12-05,2017-12-06,2017-12-07,2017-12-08,2017-12-09,2017-12-10,2017-12-11,2017-12-12,2017-12-13,2017-12-14,2017-12-15,2017-12-16,2017-12-17,2017-12-18,2017-12-19,2017-12-20,2017-12-21,2017-12-22,2017-12-23,2017-12-24,2017-12-25,2017-12-26,2017-12-27,2017-12-28,2017-12-29,2017-12-30,2017-12-31,2018-01-01,2018-01-02,2018-01-03,2018-01-04,2018-01-05,2018-01-06,2018-01-07,2018-01-08,2018-01-09,2018-01-10
+M0+ : 628131271.809,640210685.547,645280106.68,650904753.56,657631916.023,663642416.66,671131546.628,678941280.561,688646183.321,692140144.597,697550527.312,701866254.263,707201698.835,713626535.236,717432786.506,721699283.581,730578920.438,738066898.198,742230912.891,745801340.011,750103924.612,753739043.033,758076669.636,760924458.72,764850571.717,768049399.307,772126206.278,773582048.278,770412059.97,779497494.918,784717214.907,790703383.941,798211223.181,802144808.129,806837751.907,811125681.962,818810391.874,825359632.599,831846031.295,839762485.266
+M1+ : 424860818.97,427484221.948,430844340.322,434412413.741,437803517.656,441148249.832,445044277.83,448596106.622,452499619.552,456000171.613,459837278.734,463276311.969,466798438.66,470417970.519,474377338.1,478256466.833,482578973.656,486599181.732,489899669.382,492801175.464,496618358.104,500054339.812,503761776.882,507598571.907,511486510.243,515468505.069,520116994.556,529495625.686,528722990.475,532085918.442,537930029.503,543558030.94,550590321.261,556377026.328,562110184.886,567866317.552,573391844.0,579117745.661,585277133.196,591811243.983
+M2+ : 312556129.679,314869448.572,317845956.252,321108921.892,324557738.615,327541433.124,330808028.32,333707671.101,336571011.261,339870540.421,343584752.721,346975847.355,350546228.408,354256517.955,357661570.334,361318788.42,365590528.045,369663536.908,373128769.375,376078607.701,379803486.267,383395526.303,386576066.994,389732707.416,393585626.496,397603015.288,402150596.229,405321528.678,409316475.003,411752998.077,414808224.74,417390379.829,419751832.166,422692741.797,425850321.52,428823092.814,431821883.638,435268963.582,438483226.816,441954679.721
+M3+ : 229541181.592,231301842.773,233461598.126,235462803.242,237847638.705,239803404.693,242421033.463,244671846.164,246895328.793,249351737.019,251690227.041,254138941.638,256874565.483,259549102.308,262345412.908,265187480.569,268001846.322,270699979.72,273341843.214,275721552.828,278866945.886,281822558.763,284456015.144,287159181.832,289594938.863,292838253.383,296508242.327,301768073.298,301730997.423,305479636.11,308173712.269,310412148.741,312724285.841,315643916.573,318853459.117,322239112.216,325170258.184,328358086.324,331196749.537,333989661.783
+M4+ : 173803132.522,175053384.428,176912580.248,178587043.912,180589234.555,182092435.733,183653156.916,185242500.091,186800839.517,188563881.766,190044775.052,191645322.327,193192265.001,194657421.768,196216754.092,198073342.761,200266624.539,202568845.22,204647789.912,206457885.402,208138028.618,210170014.172,212080599.981,214283917.144,216367529.424,218970663.543,220825439.838,222446653.434,223462003.605,225361680.756,227483068.4,229464009.701,231271158.981,233447968.242,235456579.255,237840617.942,239795142.922,242404834.861,244648772.73,246867309.067
+M5+ : 139328954.545,140082860.232,141020308.961,142084324.521,143197296.581,144242666.125,145286245.812,146149251.433,147117648.582,148253627.891,149336045.925,150360911.582,151281892.927,152215886.042,153099801.759,154270506.05,155290999.816,156418845.766,157620232.444,158642540.289,159904799.274,161193816.281,162395536.017,163754977.637,165121118.53,166966937.987,168278463.925,169554219.888,170377795.166,171335253.149,172504498.497,173756750.396,175034744.621,176904094.042,178583370.068,180587624.695,182091747.178,183652860.922,185242375.492,186800785.735
+M6+ : 116935966.361,117463249.136,118119066.255,118765792.892,119475059.338,120179135.011,120878276.973,121683974.558,122466847.457,123474729.647,124257871.73,124969880.715,125625023.077,126232731.495,126822214.421,127647053.758,128506489.506,129251043.459,130010327.265,130749813.146,131468598.447,132296254.425,133033528.987,133795236.038,134607243.178,135293600.491,135914592.863,136553333.081,136553333.081,137745636.701,138485076.651,139301886.561,140071710.059,141015430.198,142082277.054,143196414.803,144242288.739,145286084.703,146149181.045,147117618.167
+M0+_overdue : 411381702.936,418741052.215,421566304.953,425031740.038,429192129.798,432802728.401,437293398.507,442000127.405,447316603.017,449628901.531,453555061.574,456764177.269,460701875.05,464230656.01,466750414.881,469449322.45,474728179.268,479589166.485,482412576.664,485026118.805,488243241.099,491328467.24,494460404.427,497219045.688,501008774.098,504595539.049,508758590.993,513073885.549,509247328.25,515660541.879,519959393.594,524320002.022,528890679.129,532318131.891,536241940.668,539643283.878,544340947.467,548772129.702,553048870.163,557468323.655
+M1+_overdue : 286952367.621,288824941.64,291239140.973,293607277.966,296002214.499,298296802.83,301058395.875,303525476.662,306167574.585,308777689.731,311455757.731,313948376.827,316461010.645,319023953.289,321773183.961,324632222.298,327533332.107,330328551.763,332747412.328,334894854.549,337784385.91,340534545.409,343349357.0,346366763.327,349518550.957,352926791.167,356344460.023,361153842.169,360813954.861,364715206.102,368310260.989,371644994.172,375727266.686,379368745.431,383066743.535,386796178.273,390245005.383,393921691.087,397586667.219,401417206.114
+M2+_overdue : 216699916.258,218161556.125,220160658.776,222270617.219,224576395.509,226525537.914,228479901.001,230282329.689,232120237.689,234455070.717,236834923.027,238962879.229,241141086.985,243379035.318,245430471.894,247931654.772,250542033.435,253106406.87,255232171.974,257201135.35,259455700.36,261768731.227,263874297.474,266158099.607,268822567.67,271561741.658,274192425.835,276588834.998,277602660.714,279729747.009,281828898.432,283746444.826,285521552.33,287770855.82,289980548.121,292218367.296,294373462.351,296938635.04,299248972.833,301688696.345
+M3+_overdue : 167471972.974,168531414.33,169787678.222,171031529.265,172485393.652,173736659.149,175404471.781,176816803.721,178145785.162,179710231.452,181226285.719,182762391.589,184353856.359,185973997.164,187551437.531,189289967.882,190912567.013,192596084.766,194315770.014,195770171.593,197576646.037,199239869.397,200754294.275,202362420.385,203904452.864,205953735.894,207977108.793,210609264.88,210598512.612,212784012.493,214408287.17,215893615.772,217376927.004,219357373.636,221450838.705,223727228.736,225658663.664,227583979.794,229370439.777,231181932.736
+M4+_overdue : 132974400.575,133795715.482,134900398.274,136032198.568,137261475.142,138279442.531,139327642.495,140341708.822,141328129.794,142491125.011,143485925.402,144483702.0,145505202.109,146466884.617,147447168.463,148596438.177,149937219.437,151266880.123,152521792.11,153614227.695,154670350.531,155906149.472,157055303.496,158327555.967,159582586.04,160994260.498,162039158.949,163007841.437,163630670.506,164807589.426,166162671.031,167426739.558,168513311.822,169779600.731,171028004.167,172482410.479,173733758.744,175399531.96,176809148.925,178136957.855
+M5+_overdue : 109861674.825,110449920.748,111075104.626,111856542.882,112676494.429,113425486.461,114227785.939,114912576.78,115610251.465,116452604.272,117245084.908,117990469.733,118681211.224,119316282.468,119908478.842,120693325.511,121389695.099,122195014.576,122948913.092,123637964.96,124468371.177,125291971.217,126057722.832,126867769.853,127718636.378,128731114.602,129478201.695,130257809.965,130493806.931,131308300.195,132120978.362,132944971.947,133783852.002,134895112.63,136029952.496,137260505.392,138279028.744,139327464.875,140341633.387,141328097.382
+M6+_overdue : 93569837.8955,93984538.9746,94463771.5119,94979897.8211,95529385.1276,96068281.3258,96631024.5435,97228474.5041,97774820.644,98573883.296,99215623.3264,99799673.7464,100279200.042,100725874.831,101183305.37,101713879.766,102272186.407,102847023.143,103394763.061,103891190.776,104393183.769,104946170.036,105441489.617,105935297.341,106464714.001,106935772.894,107374687.288,107825070.43,107825070.43,108702593.494,109284190.187,109842264.627,110442043.809,111071623.583,111855082.786,112675861.584,113425215.555,114227668.718,114912526.185,115610229.655
+********************************* 保存文件耗时： 154.507115841  seconds ***********************************
+estimator order exposure over 2017-12-02 10:12:42
+-------计算敞口结束------
+计算敞口全部完成！
+---------end predict exposure-------
+--------begin calculate the difference-------
+------------end of preparing data--------
+-----------end of finding difference-----
+--------end calculate the difference-------
+--------begin report future risk-------
+-------end future risk--------
+-------sending email-------
+over
+-------end sending email------
+=======END======
+copy today's file as predition file
+end of copy
+---------begin predict exposure-------
+2017-12-03 10:00:04  -  new session: 2017120310000457389a0a02e09baf	total lines: 7,579
+2017-12-03 10:00:04  -  file [0]: [0, 7,579), data/input/fenqi_cycle_amount_old_rate.txt
+downloading 7,579 records into 1 file
+2017-12-03 10:00:04  -  file [0] start
+2017-12-03 10:00:05  -  file [0] OK. total: 407 KB
+download OK
+2017-12-03 10:00:06  -  new session: 2017120310000615399a0a02e03145	total lines: 181,964
+2017-12-03 10:00:06  -  file [0]: [0, 181,964), data/input/fenqi_cycle_fenqi_diff_amount_rate_old_file.csv
+downloading 181,964 records into 1 file
+2017-12-03 10:00:06  -  file [0] start
+2017-12-03 10:00:09  -  file [0] OK. total: 10.8 MB
+total: 10.8 MB, time: 2 s, average speed: 5.4 MB/s
+download OK
+2017-12-03 10:00:10  -  new session: 201712031000103f399a0a00ee1401	total lines: 1,621
+2017-12-03 10:00:10  -  file [0]: [0, 1,621), data/input/qudian_amount_data_file.csv
+downloading 1,621 records into 1 file
+2017-12-03 10:00:10  -  file [0] start
+2017-12-03 10:00:11  -  file [0] OK. total: 46.1 KB
+download OK
+2017-12-03 10:00:12  -  new session: 2017120310001236399a0a02dfb665	total lines: 30,963
+2017-12-03 10:00:12  -  file [0]: [0, 30,963), data/input/order_create_cycle_fenqi_capital_rate.csv
+downloading 30,963 records into 1 file
+2017-12-03 10:00:12  -  file [0] start
+2017-12-03 10:00:13  -  file [0] OK. total: 1.6 MB
+total: 1.6 MB, time: 1 s, average speed: 1.6 MB/s
+download OK
+2017-12-03 10:00:15  -  new session: 2017120310001524399a0a02e242e0	total lines: 8,047
+2017-12-03 10:00:15  -  file [0]: [0, 8,047), data/input/fenqi_cycle_fenqi_mean_overdue_rate.csv
+downloading 8,047 records into 1 file
+2017-12-03 10:00:15  -  file [0] start
+2017-12-03 10:00:16  -  file [0] OK. total: 5.5 MB
+total: 5.5 MB, time: 1 s, average speed: 5.5 MB/s
+download OK
+2017-12-03 10:00:18  -  new session: 201712031000182f399a0a02df975e	total lines: 181,952
+2017-12-03 10:00:18  -  file [0]: [0, 181,952), data/input/order_created_deadline_overdue_rate.csv
+downloading 181,952 records into 1 file
+2017-12-03 10:00:18  -  file [0] start
+2017-12-03 10:00:23  -  [0] 17%, 32,588 records downloaded, 6.1 MB/s
+2017-12-03 10:00:28  -  [0] 63%, 115,183 records downloaded, 9.7 MB/s
+2017-12-03 10:00:29  -  file [0] OK. total: 97.7 MB
+total: 97.7 MB, time: 11 s, average speed: 8.9 MB/s
+download OK
+2017-12-03 10:00:30  -  new session: 20171203100030173c9b0a02df8b6c	total lines: 181,952
+2017-12-03 10:00:30  -  file [0]: [0, 181,952), data/input/order_bill_now_data_file.csv
+downloading 181,952 records into 1 file
+2017-12-03 10:00:30  -  file [0] start
+2017-12-03 10:00:35  -  [0] 18%, 34,100 records downloaded, 7.2 MB/s
+2017-12-03 10:00:40  -  [0] 57%, 104,341 records downloaded, 9.5 MB/s
+2017-12-03 10:00:42  -  file [0] OK. total: 107.6 MB
+total: 107.6 MB, time: 11 s, average speed: 9.8 MB/s
+download OK
+2017-12-03 10:00:43  -  new session: 2017120310004382399a0a02e25835	total lines: 1
+2017-12-03 10:00:43  -  file [0]: [0, 1), data/input/jituan_overdue_flow_data_file.csv
+downloading 1 records into 1 file
+2017-12-03 10:00:43  -  file [0] start
+2017-12-03 10:00:44  -  file [0] OK. total: 2.4 KB
+download OK
+-------数据准备结束------
+deal_data_format.py:171: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df_tmp[order_dt] = self.this_dt
+deal data format: config file: ../../data/config/config_data version:  test_1123 ,this_dt: 2017-12-03
+2017-12-03 10:00:44
+加载文件......
+will deal list dict init .....
+---- 2017-11,5,9218839000.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-11,6,643506352.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-12,5,7839249000.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2017-12,6,602771377.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-01,5,8108822824.0 ------------
+---- 2018-01,6,611362700.0 ------------
+---- 2018-02,5,5090949650.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-02,6,453855900.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-03,5,9271815030.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-03,6,612328200.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-04,5,8500037300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-04,6,591815300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-05,5,8377039428.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-05,6,620192700.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-06,5,9298598710.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-06,6,695169800.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-07,5,8314859786.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-07,6,678154300.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-08,5,8275879098.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-08,6,689439900.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-09,5,8268954021.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-09,6,706740400.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-10,5,8391437746.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-10,6,715603700.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-11,5,9514930570.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-11,6,822043800.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-12,5,8566066100.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-12,6,816334600.0 ------------
+如果该月没有预估过 需要初始化 12
+加载完毕. 2017-12-03 10:00:45
+deal mean parameters: config file: ../../data/config/config_data
+will count fitting parameters.....
+deal parameter rules: config file: ../../data/config/config_data
+len: 4 ,sys: ['deal_parameters_rules.py', '../../data/config/config_data', 'laifenqi', '2017-12-03']
+this_dt: 2017-12-03
+will count fitting parameters.....
+df: 181952
+-------数据处理结束------
+./../lib/create_new_bill.py:105: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df[dt] = this_dt
+/home/risk/lib/python2.7/site-packages/pandas/core/frame.py:2746: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  **kwargs)
+/home/risk/lib/python2.7/site-packages/pandas/core/reshape/merge.py:1457: RuntimeWarning: divide by zero encountered in long_scalars
+  stride //= shape[i]
+config file: ../../data/config/config_data ,count end month: 2018-01-10 ,this date type: day ,this migration coefficient: 1.0 ,create risk coefficient: 1.0
+len: 9 ,sys: ['exposure_estimator.py', '../../data/config/config_data', '2018-01-10', 'day', '1.0', '1.0', 'month', 'laifenqi', '2017-12-03']
+this_dt: 2017-12-03
+will begin estimator order exposure..... 2017-12-03 10:01:47
+创建账单表..... 2017-12-03 10:01:47
+bill over! 2017-12-03 10:02:14
+init dict over! 2017-12-03 10:02:17
+账单表创建完毕。 2017-12-03 10:02:17
+********************************* 初始化读文件耗时： 29.9891679287  seconds *******************************
+product_parameter_dict: {'laifenqi,6,2,6': ['1.0', '136.837216775', '1.05393848366', '129.079060978'], 'laifenqi,999,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,6,2,3': ['1.0', '132.13916477', '1.0', '266.997698061'], 'laifenqi,6,2,2': ['1.0', '138.28159746', '1.0', '246.031319376'], 'laifenqi,6,2,9': ['1.0', '206.261180139', '1.0', '124.464530563'], 'laifenqi,8,2,6': ['1.0', '33.0638031377', '1.049', '31.5109402815'], 'laifenqi,5,2,12': ['1.0', '14.7597127765', '1.0', '47.7031140945'], 'laifenqi,8,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,5,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,8,2,12': ['1.0', '58.6654335515', '1.0', '79.864962906'], 'laifenqi,6,2,12': ['1.0', '170.197795404', '1.0', '367.049155491'], 'laifenqi,5,1,1': ['1.0', '359.572649888', '1.0', '1016.78308813'], 'laifenqi,6,999,999': ['1.0', '9999.0', '1.25', '9999.0'], 'laifenqi,5,2,9': ['1.0', '10.6798802246', '1.0', '67.1685495504'], 'laifenqi,5,2,6': ['1.0', '558.955641544', '1.17252963796', '265.659450402'], 'laifenqi,5,2,3': ['1.0', '371.641402572', '1.04377320918', '216.412851884'], 'laifenqi,5,2,1': ['1.0', '724.360688476', '1.0', '710.27832597']}
+账单数量: 207683
+产品: laifenqi,6,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.05393848366 ,after adjustment: 1.0 1.05393848366 2017-12-03 10:02:17
+产品: laifenqi,6,2,6 ,migration rate: 1.0 ,risk rate: 1.05393848366 2017-12-03 10:02:17
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 207683
+-------------------该产品账单表数量: 26244
+-------------------剩余账单表数量: 181439
+**************************************** 计算产品 laifenqi,6,2,6 的逾期金额耗时： 13.1470930576  seconds **********************************
+产品: laifenqi,6,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:03:29
+产品: laifenqi,6,2,3 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:03:29
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 181439
+-------------------该产品账单表数量: 12142
+-------------------剩余账单表数量: 169297
+**************************************** 计算产品 laifenqi,6,2,3 的逾期金额耗时： 6.35652303696  seconds **********************************
+产品: laifenqi,6,2,2 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:04:07
+产品: laifenqi,6,2,2 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:04:07
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 169297
+-------------------该产品账单表数量: 9010
+-------------------剩余账单表数量: 160287
+**************************************** 计算产品 laifenqi,6,2,2 的逾期金额耗时： 5.45223212242  seconds **********************************
+产品: laifenqi,6,2,9 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:04:38
+产品: laifenqi,6,2,9 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:04:38
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 160287
+-------------------该产品账单表数量: 39342
+-------------------剩余账单表数量: 120945
+**************************************** 计算产品 laifenqi,6,2,9 的逾期金额耗时： 19.5860779285  seconds **********************************
+产品: laifenqi,8,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.049 ,after adjustment: 1.0 1.049 2017-12-03 10:06:13
+产品: laifenqi,8,2,6 ,migration rate: 1.0 ,risk rate: 1.049 2017-12-03 10:06:13
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 120945
+-------------------该产品账单表数量: 2978
+-------------------剩余账单表数量: 117967
+产品: laifenqi,5,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:06:14
+产品: laifenqi,5,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:06:14
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 117967
+-------------------该产品账单表数量: 7339
+-------------------剩余账单表数量: 110628
+**************************************** 计算产品 laifenqi,5,2,12 的逾期金额耗时： 2.42900919914  seconds **********************************
+产品: laifenqi,8,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:06:22
+产品: laifenqi,8,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:06:22
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 110628
+-------------------该产品账单表数量: 21299
+-------------------剩余账单表数量: 89329
+产品: laifenqi,6,2,12 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:06:34
+产品: laifenqi,6,2,12 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:06:34
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 89329
+-------------------该产品账单表数量: 50447
+-------------------剩余账单表数量: 38882
+**************************************** 计算产品 laifenqi,6,2,12 的逾期金额耗时： 24.1879208088  seconds **********************************
+产品: laifenqi,5,1,1 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:08:15
+产品: laifenqi,5,1,1 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:08:15
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 38882
+-------------------该产品账单表数量: 2033
+-------------------剩余账单表数量: 36849
+**************************************** 计算产品 laifenqi,5,1,1 的逾期金额耗时： 0.853040933609  seconds **********************************
+产品: laifenqi,5,2,9 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:08:21
+产品: laifenqi,5,2,9 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:08:21
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 36849
+-------------------该产品账单表数量: 5430
+-------------------剩余账单表数量: 31419
+**************************************** 计算产品 laifenqi,5,2,9 的逾期金额耗时： 2.00090885162  seconds **********************************
+产品: laifenqi,5,2,6 ,migration rate;risk rate,before adjustment: 1.0 1.17252963796 ,after adjustment: 1.0 1.17252963796 2017-12-03 10:08:29
+产品: laifenqi,5,2,6 ,migration rate: 1.0 ,risk rate: 1.17252963796 2017-12-03 10:08:29
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 31419
+-------------------该产品账单表数量: 11418
+-------------------剩余账单表数量: 20001
+**************************************** 计算产品 laifenqi,5,2,6 的逾期金额耗时： 3.05774021149  seconds **********************************
+产品: laifenqi,5,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.04377320918 ,after adjustment: 1.0 1.04377320918 2017-12-03 10:08:58
+产品: laifenqi,5,2,3 ,migration rate: 1.0 ,risk rate: 1.04377320918 2017-12-03 10:08:58
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 20001
+-------------------该产品账单表数量: 5424
+-------------------剩余账单表数量: 14577
+**************************************** 计算产品 laifenqi,5,2,3 的逾期金额耗时： 1.45968699455  seconds **********************************
+产品: laifenqi,5,2,1 ,migration rate;risk rate,before adjustment: 1.0 1.0 ,after adjustment: 1.0 1.0 2017-12-03 10:09:15
+产品: laifenqi,5,2,1 ,migration rate: 1.0 ,risk rate: 1.0 2017-12-03 10:09:15
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 14577
+-------------------该产品账单表数量: 1879
+-------------------剩余账单表数量: 12698
+**************************************** 计算产品 laifenqi,5,2,1 的逾期金额耗时： 0.567159175873  seconds **********************************
+产品: laifenqi,5,999,999 ,migration rate;risk rate,before adjustment: 1.0 1.25
+after adjustment: 1.0 1.25 2017-12-03 10:09:22
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 12698
+-------------------该产品账单表数量: 10203
+-------------------剩余账单表数量: 2495
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9108 before len: 9108 ,current len: 0
+产品: laifenqi,6,999,999 ,migration rate;risk rate,before adjustment: 1.0 1.25
+after adjustment: 1.0 1.25 2017-12-03 10:09:43
+-------------------总账单表数量: 207683
+-------------------剩余账单表数量: 2495
+-------------------该产品账单表数量: 2495
+-------------------剩余账单表数量: 0
+all product bills over! 2017-12-03 10:09:51
+********************************* 计算各逾期金额、敞口的总耗时： 454.220484018  seconds *******************
+Day :  2017-12-03,2017-12-04,2017-12-05,2017-12-06,2017-12-07,2017-12-08,2017-12-09,2017-12-10,2017-12-11,2017-12-12,2017-12-13,2017-12-14,2017-12-15,2017-12-16,2017-12-17,2017-12-18,2017-12-19,2017-12-20,2017-12-21,2017-12-22,2017-12-23,2017-12-24,2017-12-25,2017-12-26,2017-12-27,2017-12-28,2017-12-29,2017-12-30,2017-12-31,2018-01-01,2018-01-02,2018-01-03,2018-01-04,2018-01-05,2018-01-06,2018-01-07,2018-01-08,2018-01-09,2018-01-10
+M0+ : 648696984.476,654711091.42,661280677.591,669547305.39,676899371.375,685805785.679,695453039.014,707492179.321,711275862.422,717884593.084,723044238.269,729619516.703,736806100.292,741105270.447,745901738.472,756768405.32,765595014.374,770233922.303,774367971.178,779350267.442,783549446.509,788547596.889,791643766.639,796294551.503,800081804.528,805272065.813,807985399.987,802505271.878,814215604.48,820120840.984,827371379.848,835518929.947,839560448.87,844901670.907,849434504.25,857681089.204,864747889.042,871729051.512,880226706.209
+M1+ : 427098566.543,430445796.612,434058098.983,437437092.362,440824193.96,444735160.302,448333562.668,452288528.736,455806286.525,459664802.655,463156121.378,466680011.303,470352801.451,474328725.927,478263534.709,482623942.91,486723396.046,490047945.385,493015115.245,496885411.299,500408213.547,504188514.2,508106165.658,512083653.484,516198636.779,520959818.54,530416083.286,529657500.088,533145160.382,537934763.452,544314172.457,552516384.242,559305267.825,565923172.823,572632914.968,579068350.664,585743107.576,592898376.715,600579208.391
+M2+ : 314619048.978,317576702.623,320819252.447,324282578.415,327247379.036,330528420.281,333417215.283,336269817.228,339553631.432,343241781.287,346612646.064,350156435.509,353866434.032,357261938.103,360898855.952,365147473.183,369198081.646,372659168.107,375611237.04,379338035.279,382936464.23,386093532.426,389267109.329,393111164.241,397144126.392,401661786.562,404844943.327,408801438.794,411265925.76,414327427.317,416916004.338,419474803.494,422448360.641,425624440.258,428602720.822,431616073.361,435097348.652,438329645.398,441856863.864
+M3+ : 231209385.342,233359262.53,235352831.624,237729785.853,239689660.79,242300782.482,244551993.235,246777926.216,249242232.976,251588636.174,254038522.19,256783948.102,259449924.457,262246228.689,265089153.073,267908824.15,270609338.183,273241000.407,275620484.537,278758887.583,281705346.197,284323594.779,287006068.073,289425291.848,292649862.804,296291780.054,301517554.615,301486259.904,305190806.765,307863807.709,310074084.85,312372220.105,315268710.385,318460748.662,321830898.17,324733250.716,327917202.48,330737627.267,333517907.745
+M4+ : 174979404.767,176825466.858,178496779.64,180494578.745,181993139.773,183554452.115,185135791.468,186694549.928,188455701.976,189935222.479,191533702.241,193078953.042,194547621.048,196107243.525,197963181.457,200154144.902,202451027.498,204535420.9,206345359.3,208027124.317,210056831.828,211966105.076,214169980.63,216252470.307,218859956.907,220714763.389,222336601.621,223349298.492,225243281.887,227367925.04,229350759.028,231150677.307,233335529.757,235342607.197,237725073.305,239686577.826,242293047.656,244542410.058,246762511.621
+M5+ : 140039439.449,140965149.396,142025744.69,143137712.121,144174935.755,145221086.776,146085432.147,147054006.89,148190081.502,149271151.15,150294999.064,151212959.073,152142398.122,153019991.328,154188151.935,155203766.639,156334758.334,157533581.789,158555476.339,159816599.089,161105215.101,162308667.858,163668320.496,165028912.944,166873036.457,168185631.095,169460061.297,170283701.759,171245779.573,172414201.404,173666520.145,174942128.445,176809528.953,178489706.032,180491533.086,181991815.761,183553891.334,185135547.555,186694445.764
+M6+ : 117429433.075,118080081.138,118725261.213,119434343.239,120138211.039,120835997.68,121640672.863,122421887.177,123430120.161,124213898.369,124925482.628,125581042.86,126189464.897,126779038.444,127606692.858,128465295.801,129206713.31,129962424.915,130700750.376,131419285.815,132246071.418,132983559.715,133745478.007,134557652.725,135238524.675,135859196.178,136498595.371,136498595.371,137686406.13,138430059.847,139247075.216,140017485.096,140955686.056,142021567.426,143135956.773,144174144.065,145220757.258,146085291.091,147053946.726
+M0+_overdue : 424278285.212,427517126.624,431532130.538,436518154.127,440873853.045,446037863.559,451968503.174,458550716.254,460972591.767,465640297.122,469309881.382,473994823.724,477989819.324,480645649.775,483455654.273,489743685.28,495373539.1,498366704.807,501248499.289,504732857.729,508117517.435,511622140.398,514555918.099,518853046.542,522767868.205,527516532.009,532524218.508,527082435.519,535089591.982,539628383.14,544938918.181,550136357.006,553883104.156,558415987.156,562159728.566,567437938.214,572392189.389,577201636.521,582132536.766
+M1+_overdue : 288582308.783,290990131.45,293365949.035,295764260.342,298067307.132,300838213.941,303321733.589,305982379.015,308604835.838,311288580.67,313793657.38,316304571.934,318884553.808,321640410.132,324520725.996,327438034.891,330253381.733,332691752.329,334859220.913,337769250.789,340546127.33,343398279.878,346455491.827,349648835.736,353108541.15,356575274.61,361408606.7,361065403.879,364979575.41,368104237.082,372010158.401,376818598.202,380984379.423,385148992.295,389354039.396,393272004.956,397431361.826,401626647.717,406057322.769
+M2+_overdue : 218024235.684,220007874.972,222110995.442,224413720.446,226359195.536,228314543.912,230116434.454,231951452.956,234285228.518,236657573.169,238785768.934,240957927.605,243194686.456,245240307.457,247736795.793,250338698.529,252900247.057,255021415.465,256991411.295,259247112.511,261553416.184,263651057.293,265930945.965,268589672.624,271327278.497,273941736.089,276335278.03,277340175.207,279464226.344,281563597.875,283472693.31,285323236.738,287577244.678,289793483.546,292032117.784,294187456.726,296759254.568,299071807.706,301523221.537
+M3+_overdue : 168467722.149,169714334.375,170954347.937,172405053.673,173655756.922,175324383.889,176734515.347,178064041.525,179630314.704,181149076.581,182683315.668,184278377.294,185898417.838,187474098.605,189212833.562,190835379.191,192520943.907,194236711.451,195693992.314,197498496.191,199163352.876,200672242.011,202275879.588,203812472.155,205857033.15,207868988.717,210490889.926,210478352.616,212654825.191,214267813.962,215750583.622,217224957.662,219202631.501,221288016.41,223560711.24,225484076.852,227411126.386,229192695.872,231007191.052
+M4+_overdue : 133755958.435,134852167.608,135981909.364,137207948.203,138221605.652,139269922.983,140279621.757,141265514.49,142427020.733,143419459.349,144415620.189,145436432.117,146398610.958,147378153.533,148527357.44,149866366.095,151193950.662,152450655.147,153542378.008,154598867.834,155834460.92,156983273.235,158255722.851,159508408.884,160920258.537,161965453.624,162933999.414,163555486.907,164730211.761,166084940.792,167349149.206,168431775.056,169699534.423,170947909.225,172402278.126,173654321.183,175321949.228,176732142.982,178059340.905
+M5+_overdue : 110424392.539,111042942.104,111822640.633,112642208.557,113390660.682,114193463.872,114878773.82,115576183.426,116418270.731,117209478.155,117954388.572,118643287.471,119277020.565,119866699.259,120651519.844,121345781.856,122151480.715,122902914.861,123591235.335,124420009.599,125243570.648,126009753.16,126820194.005,127669742.177,128680635.095,129428107.106,130207212.923,130443222.173,131257963.399,132070170.328,132894076.468,133732625.065,134842371.049,135977613.98,137206112.07,138220800.67,139269581.919,140279473.099,141265450.961
+M6+_overdue : 93964497.8872,94439613.4978,94954516.5971,95503886.1316,96042648.5955,96605490.6635,97202122.7983,97747841.3802,98546887.2454,99188453.2305,99773072.5769,100251923.957,100699150.907,101156729.904,101687358.06,102245831.161,102818671.506,103364322.152,103859966.994,104361757.055,104913943.916,105409303.761,105903166.651,106432454.744,106902192.786,107341064.993,107791983.629,107791983.629,108669478.827,109250422.812,109808683.454,110408745.84,111036352.975,111819751.83,112640994.722,113390137.934,114193242.295,114878679.206,115576142.958
+********************************* 保存文件耗时： 156.051606894  seconds ***********************************
+estimator order exposure over 2017-12-03 10:12:27
+-------计算敞口结束------
+计算敞口全部完成！
+---------end predict exposure-------
+--------begin calculate the difference-------
+------------end of preparing data--------
+-----------end of finding difference-----
+--------end calculate the difference-------
+--------begin report future risk-------
+-------end future risk--------
+-------sending email-------
+over
+-------end sending email------
+=======END======

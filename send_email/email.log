@@ -1,0 +1,13 @@
+2017-10-31 11:00:09  -  new session: 201710311100097c399a0a013b190d	total lines: 15
+2017-10-31 11:00:09  -  file [0]: [0, 15), data/laifenqi_yesterday_predict_changkou.csv
+downloading 15 records into 1 file
+2017-10-31 11:00:09  -  file [0] start
+2017-10-31 11:00:10  -  file [0] OK. total: 3.2 KB
+download OK
+2017-10-31 11:00:11  -  new session: 20171031110011af389a0a013e4f1f	total lines: 15
+2017-10-31 11:00:11  -  file [0]: [0, 15), data/laifenqi_today_predict_changkou.csv
+downloading 15 records into 1 file
+2017-10-31 11:00:11  -  file [0] start
+2017-10-31 11:00:11  -  file [0] OK. total: 3.2 KB
+download OK
+over

@@ -1,0 +1,528 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+2017-11-24 10:20:04  -  new session: 20171124102004b5389a0a022180dc	total lines: 7,440
+2017-11-24 10:20:04  -  file [0]: [0, 7,440), data/input/fenqi_cycle_amount_old_rate.txt
+downloading 7,440 records into 1 file
+2017-11-24 10:20:04  -  file [0] start
+2017-11-24 10:20:06  -  file [0] OK. total: 399.4 KB
+total: 399.4 KB, time: 1 s, average speed: 399.4 KB/s
+download OK
+2017-11-24 10:20:07  -  new session: 20171124102007b8399a0a0222f812	total lines: 176,924
+2017-11-24 10:20:07  -  file [0]: [0, 176,924), data/input/fenqi_cycle_fenqi_diff_amount_rate_old_file.csv
+downloading 176,924 records into 1 file
+2017-11-24 10:20:07  -  file [0] start
+2017-11-24 10:20:10  -  file [0] OK. total: 10.5 MB
+total: 10.5 MB, time: 3 s, average speed: 3.5 MB/s
+download OK
+2017-11-24 10:20:12  -  new session: 2017112410201225389a0a021afb91	total lines: 1,588
+2017-11-24 10:20:12  -  file [0]: [0, 1,588), data/input/qudian_amount_data_file.csv
+downloading 1,588 records into 1 file
+2017-11-24 10:20:12  -  file [0] start
+2017-11-24 10:20:12  -  file [0] OK. total: 45.2 KB
+download OK
+2017-11-24 10:20:14  -  new session: 201711241020142d399a0a021baa33	total lines: 30,174
+2017-11-24 10:20:14  -  file [0]: [0, 30,174), data/input/order_create_cycle_fenqi_capital_rate.csv
+downloading 30,174 records into 1 file
+2017-11-24 10:20:14  -  file [0] start
+2017-11-24 10:20:15  -  file [0] OK. total: 1.5 MB
+download OK
+2017-11-24 10:20:16  -  new session: 201711241020165b399a0a021b78f0	total lines: 8,520
+2017-11-24 10:20:16  -  file [0]: [0, 8,520), data/input/fenqi_cycle_fenqi_mean_overdue_rate.csv
+downloading 8,520 records into 1 file
+2017-11-24 10:20:16  -  file [0] start
+2017-11-24 10:20:18  -  file [0] OK. total: 6 MB
+total: 6 MB, time: 1 s, average speed: 6 MB/s
+download OK
+2017-11-24 10:20:22  -  new session: 201711241020225b399a0a021b7967	total lines: 176,912
+2017-11-24 10:20:22  -  file [0]: [0, 176,912), data/input/order_created_deadline_overdue_rate.csv
+downloading 176,912 records into 1 file
+2017-11-24 10:20:22  -  file [0] start
+2017-11-24 10:20:27  -  [0] 14%, 24,939 records downloaded, 4.7 MB/s
+2017-11-24 10:20:32  -  [0] 51%, 90,361 records downloaded, 8.7 MB/s
+2017-11-24 10:20:34  -  file [0] OK. total: 93.6 MB
+total: 93.6 MB, time: 12 s, average speed: 7.8 MB/s
+download OK
+2017-11-24 10:20:36  -  new session: 201711241020361d399a0a021ae2b0	total lines: 176,912
+2017-11-24 10:20:36  -  file [0]: [0, 176,912), data/input/order_bill_now_data_file.csv
+downloading 176,912 records into 1 file
+2017-11-24 10:20:36  -  file [0] start
+2017-11-24 10:20:41  -  [0] 0%, 1 records downloaded, 0 bytes/s
+2017-11-24 10:20:46  -  [0] 22%, 39,342 records downloaded, 8.2 MB/s
+2017-11-24 10:20:51  -  [0] 48%, 86,506 records downloaded, 6.5 MB/s
+2017-11-24 10:20:54  -  file [0] OK. total: 103.1 MB
+total: 103.1 MB, time: 17 s, average speed: 6.1 MB/s
+download OK
+2017-11-24 10:20:55  -  new session: 20171124102055aa389a0a021e1c15	total lines: 1
+2017-11-24 10:20:55  -  file [0]: [0, 1), data/input/jituan_overdue_flow_data_file.csv
+downloading 1 records into 1 file
+2017-11-24 10:20:55  -  file [0] start
+2017-11-24 10:20:56  -  file [0] OK. total: 2.4 KB
+download OK
+-------数据准备结束------
+deal_data_format.py:171: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df_tmp[order_dt] = self.this_dt
+deal data format: config file: ../../data/config/config_data version:  test_1123 ,this_dt: 2017-11-22
+2017-11-24 10:20:56
+加载文件......
+will deal list dict init .....
+---- 2017-11,5,9218839000.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-11,6,643506352.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2017-12,5,7839249000.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2017-12,6,602771377.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-01,5,8108822824.0 ------------
+---- 2018-01,6,611362700.0 ------------
+---- 2018-02,5,5090949650.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-02,6,453855900.0 ------------
+如果该月没有预估过 需要初始化 2
+---- 2018-03,5,9271815030.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-03,6,612328200.0 ------------
+如果该月没有预估过 需要初始化 3
+---- 2018-04,5,8500037300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-04,6,591815300.0 ------------
+如果该月没有预估过 需要初始化 4
+---- 2018-05,5,8377039428.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-05,6,620192700.0 ------------
+如果该月没有预估过 需要初始化 5
+---- 2018-06,5,9298598710.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-06,6,695169800.0 ------------
+如果该月没有预估过 需要初始化 6
+---- 2018-07,5,8314859786.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-07,6,678154300.0 ------------
+如果该月没有预估过 需要初始化 7
+---- 2018-08,5,8275879098.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-08,6,689439900.0 ------------
+如果该月没有预估过 需要初始化 8
+---- 2018-09,5,8268954021.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-09,6,706740400.0 ------------
+如果该月没有预估过 需要初始化 9
+---- 2018-10,5,8391437746.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-10,6,715603700.0 ------------
+如果该月没有预估过 需要初始化 10
+---- 2018-11,5,9514930570.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-11,6,822043800.0 ------------
+如果该月没有预估过 需要初始化 11
+---- 2018-12,5,8566066100.0 ------------
+如果该月没有预估过 需要初始化 12
+---- 2018-12,6,816334600.0 ------------
+如果该月没有预估过 需要初始化 12
+加载完毕. 2017-11-24 10:20:57
+deal mean parameters: config file: ../../data/config/config_data
+will count fitting parameters.....
+deal parameter rules: config file: ../../data/config/config_data
+len: 4 ,sys: ['deal_parameters_rules.py', '../../data/config/config_data', 'laifenqi', '2017-11-22']
+this_dt: 2017-11-22
+will count fitting parameters.....
+df: 176912
+-------数据处理结束------
+./../lib/create_new_bill.py:105: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  df[dt] = this_dt
+/home/risk/lib/python2.7/site-packages/pandas/core/frame.py:2746: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  **kwargs)
+/home/risk/lib/python2.7/site-packages/pandas/core/reshape/merge.py:1457: RuntimeWarning: divide by zero encountered in long_scalars
+  stride //= shape[i]
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+config file: ../../data/config/config_data ,count end month: 2018-12-31 ,this date type: month ,this migration coefficient: 1.0 ,create risk coefficient: 1.0
+len: 9 ,sys: ['exposure_estimator.py', '../../data/config/config_data', '2018-12-31', 'month', '1', '1', 'month', 'laifenqi', '2017-11-22']
+this_dt: 2017-11-22
+will begin estimator order exposure..... 2017-11-24 10:22:01
+创建账单表..... 2017-11-24 10:22:01
+bill over! 2017-11-24 10:22:32
+init dict over! 2017-11-24 10:22:35
+账单表创建完毕。 2017-11-24 10:22:35
+********************************* 初始化读文件耗时： 33.5398898125  seconds *******************************
+product_parameter_dict: {'laifenqi,6,2,6': ['1.0', '136.837216775', '0.94', '129.079060978'], 'laifenqi,999,999,999': ['1.00', '9999', '1.25', '9999'], 'laifenqi,6,2,3': ['1.0', '132.13916477', '0.89', '266.997698061'], 'laifenqi,6,2,2': ['1.0', '138.28159746', '0.89', '246.031319376'], 'laifenqi,6,2,9': ['1.0', '206.261180139', '0.922', '124.464530563'], 'laifenqi,8,2,6': ['1.0', '33.0638031377', '1.049', '31.5109402815'], 'laifenqi,5,2,12': ['1.0', '14.7597127765', '0.89', '47.7031140945'], 'laifenqi,8,999,999': ['1.00', '9999', '1.25', '9999'], 'laifenqi,5,999,999': ['1.00', '9999', '1.25', '9999'], 'laifenqi,8,2,12': ['1.0', '58.6654335515', '0.89', '79.864962906'], 'laifenqi,6,2,12': ['1.0', '170.197795404', '0.89', '367.049155491'], 'laifenqi,5,1,1': ['1.0', '359.572649888', '0.89', '1016.78308813'], 'laifenqi,6,999,999': ['1.00', '9999', '1.25', '9999'], 'laifenqi,5,2,9': ['1.0', '10.6798802246', '0.89', '67.1685495504'], 'laifenqi,5,2,6': ['1.0', '558.955641544', '0.997', '265.659450402'], 'laifenqi,5,2,3': ['1.0', '371.641402572', '1.071', '216.412851884'], 'laifenqi,5,2,1': ['1.0', '724.360688476', '0.89', '710.27832597']}
+账单数量: 203127
+产品: laifenqi,6,2,6 ,migration rate;risk rate,before adjustment: 1.0 0.94 ,after adjustment: 1.0 0.94 2017-11-24 10:22:35
+产品: laifenqi,6,2,6 ,migration rate: 1.0 ,risk rate: 0.94 2017-11-24 10:22:35
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 203127
+-------------------该产品账单表数量: 25591
+-------------------剩余账单表数量: 177536
+**************************************** 计算产品 laifenqi,6,2,6 的逾期金额耗时： 54.3080039024  seconds **********************************
+产品: laifenqi,6,2,3 ,migration rate;risk rate,before adjustment: 1.0 0.89 ,after adjustment: 1.0 0.89 2017-11-24 10:23:51
+产品: laifenqi,6,2,3 ,migration rate: 1.0 ,risk rate: 0.89 2017-11-24 10:23:51
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 177536
+-------------------该产品账单表数量: 11854
+-------------------剩余账单表数量: 165682
+**************************************** 计算产品 laifenqi,6,2,3 的逾期金额耗时： 22.5184998512  seconds **********************************
+产品: laifenqi,6,2,2 ,migration rate;risk rate,before adjustment: 1.0 0.89 ,after adjustment: 1.0 0.89 2017-11-24 10:24:26
+产品: laifenqi,6,2,2 ,migration rate: 1.0 ,risk rate: 0.89 2017-11-24 10:24:26
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 165682
+-------------------该产品账单表数量: 8722
+-------------------剩余账单表数量: 156960
+**************************************** 计算产品 laifenqi,6,2,2 的逾期金额耗时： 16.6796050072  seconds **********************************
+产品: laifenqi,6,2,9 ,migration rate;risk rate,before adjustment: 1.0 0.922 ,after adjustment: 1.0 0.922 2017-11-24 10:24:51
+产品: laifenqi,6,2,9 ,migration rate: 1.0 ,risk rate: 0.922 2017-11-24 10:24:51
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 156960
+-------------------该产品账单表数量: 38256
+-------------------剩余账单表数量: 118704
+**************************************** 计算产品 laifenqi,6,2,9 的逾期金额耗时： 104.442354918  seconds **********************************
+产品: laifenqi,8,2,6 ,migration rate;risk rate,before adjusmysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+tment: 1.0 1.049 ,after adjustment: 1.0 1.049 2017-11-24 10:27:09
+产品: laifenqi,8,2,6 ,migration rate: 1.0 ,risk rate: 1.049 2017-11-24 10:27:09
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 118704
+-------------------该产品账单表数量: 2954
+-------------------剩余账单表数量: 115750
+产品: laifenqi,5,2,12 ,migration rate;risk rate,before adjustment: 1.0 0.89 ,after adjustment: 1.0 0.89 2017-11-24 10:27:13
+产品: laifenqi,5,2,12 ,migration rate: 1.0 ,risk rate: 0.89 2017-11-24 10:27:13
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 115750
+-------------------该产品账单表数量: 7243
+-------------------剩余账单表数量: 108507
+**************************************** 计算产品 laifenqi,5,2,12 的逾期金额耗时： 27.3512690067  seconds **********************************
+产品: laifenqi,8,2,12 ,migration rate;risk rate,before adjustment: 1.0 0.89 ,after adjustment: 1.0 0.89 2017-11-24 10:27:45
+产品: laifenqi,8,2,12 ,migration rate: 1.0 ,risk rate: 0.89 2017-11-24 10:27:45
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 108507
+-------------------该产品账单表数量: 20763
+-------------------剩余账单表数量: 87744
+产品: laifenqi,6,2,12 ,migration rate;risk rate,before adjustment: 1.0 0.89 ,after adjustment: 1.0 0.89 2017-11-24 10:28:55
+产品: laifenqi,6,2,12 ,migration rate: 1.0 ,risk rate: 0.89 2017-11-24 10:28:55
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 87744
+-------------------该产品账单表数量: 49092
+-------------------剩余账单表数量: 38652
+**************************************** 计算产品 laifenqi,6,2,12 的逾期金额耗时： 157.596349001  seconds **********************************
+产品: laifenqi,5,1,1 ,migration rate;risk rate,before adjustment: 1.0 0.89 ,after adjustment: 1.0 0.89 2017-11-24 10:32:11
+产品: laifenqi,5,1,1 ,migration rate: 1.0 ,risk rate: 0.89 2017-11-24 10:32:11
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 38652
+-------------------该产品账单表数量: 2022
+-------------------剩余账单表数量: 36630
+**************************************** 计算产品 laifenqi,5,1,1 的逾期金额耗时： 3.20131492615  seconds **********************************
+产品: laifenqi,5,2,9 ,migration rate;risk rate,before adjustment: 1.0 0.89 ,after adjustment: 1.0 0.89 2017-11-24 10:32:18
+产品: laifenqi,5,2,9 ,migration rate: 1.0 ,risk rate: 0.89 2017-11-24 10:32:18
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 36630
+-------------------该产品账单表数量: 5331
+-------------------剩余账单表数量: 31299
+**************************************** 计算产品 laifenqi,5,2,9 的逾期金额耗时： 23.4146118164  seconds **********************************
+产品: laifenqi,5,2,6 ,migration rate;risk rate,before adjustment: 1.0 0.997 ,after adjustment: 1.0 0.997 2017-11-24 10:32:45
+产品: laifenqi,5,2,6 ,migration rate: 1.0 ,risk rate: 0.997 2017-11-24 10:32:45
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 31299
+-------------------该产品账单表数量: 11348
+-------------------剩余账单表数量: 19951
+**************************************** 计算产品 laifenqi,5,2,6 的逾期金额耗时： 17.4951291084  seconds **********************************
+产品: laifenqi,5,2,3 ,migration rate;risk rate,before adjustment: 1.0 1.071 ,after adjustment: 1.0 1.071 2017-11-24 10:33:14
+产品: laifenqi,5,2,3 ,migration rate: 1.0 ,risk rate: 1.071 2017-11-24 10:33:14
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 19951
+-------------------该产品账单表数量: 5393
+-------------------剩余账单表数量: 14558
+**************************************** 计算产品 laifenqi,5,2,3 的逾期金额耗时： 8.35355997086  seconds **********************************
+产品: laifenqi,5,2,1 ,migration rate;risk rate,before adjustment: 1.0 0.89 ,after adjustment: 1.0 0.89 2017-11-24 10:33:30
+产品: laifenqi,5,2,1 ,migration rate: 1.0 ,risk rate: 0.89 2017-11-24 10:33:30
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 14558
+-------------------该产品账单表数量: 1868
+-------------------剩余账单表数量: 12690
+**************************************** 计算产品 laifenqi,5,2,1 的逾期金额耗时： 3.00135993958  seconds **********************************
+产品: laifenqi,5,999,999 ,migration rate;risk rate,before adjustment: 1.00 1.25
+after adjustment: 1.0 1.25 2017-11-24 10:33:37
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 12690
+-------------------该产品账单表数量: 10185
+-------------------剩余账单表数量: 2505
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 9090 before len: 9090 ,current len: 0
+产品: laifenqi,6,999,999 ,migration rate;risk rate,before adjustment: 1.00 1.25
+after adjustment: 1.0 1.25 2017-11-24 10:33:59
+-------------------总账单表数量: 203127
+-------------------剩余账单表数量: 2505
+-------------------该产品账单表数量: 2505
+-------------------剩余账单表数量: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+Warning !!!!!!!!!!!!!!!
+all len: 2505 before len: 2505 ,current len: 0
+all product bills over! 2017-11-24 10:34:05
+********************************* 计�mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+�各逾期金额、敞口的总耗时： 689.616564035  seconds *******************
+Day :  2017-11-30,2017-12-31,2018-01-31,2018-02-28,2018-03-31,2018-04-30,2018-05-31,2018-06-30,2018-07-31,2018-08-31,2018-09-30,2018-10-31,2018-11-30,2018-12-31
+M0+ : 573739846.506,702480401.479,819439041.808,931840474.525,982343295.589,1090964687.38,1165797944.27,1265418666.59,1360873283.98,1475937437.65,1610945320.04,1726027063.93,1870207755.63,2002587786.45
+M1+ : 414271245.068,514395585.644,632726493.333,741007289.168,829776388.285,906115488.94,998314008.62,1085049466.21,1173847214.39,1274051287.97,1384442463.43,1502427208.58,1624917720.42,1749552313.62
+M2+ : 304378292.026,403325586.651,494173154.016,609147497.281,710360804.34,798651865.617,874949035.446,967082842.532,1053464001.32,1142301498.0,1242416853.47,1349960740.74,1466870657.19,1586276920.71
+M3+ : 223221204.6,301903969.232,396753982.831,484545409.989,595294988.921,694366986.585,781466922.494,859556727.523,950759435.066,1037605150.46,1126665419.67,1225815350.46,1333017939.16,1448005917.88
+M4+ : 169597255.701,223212157.807,300975572.738,393613739.671,478167496.434,586653585.638,684284195.865,771869572.705,849990623.689,941038255.728,1028116186.12,1116832331.8,1216027224.32,1322317738.45
+M5+ : 135893204.457,169597213.764,223212157.807,300960587.6,391975754.083,473701993.572,580603382.752,678317938.17,765607413.909,844380522.677,935290234.2,1022279214.06,1111133595.3,1209836440.88
+M6+ : 113918729.184,135893180.731,169597213.764,223212157.807,300960587.6,391373868.778,472067430.838,578628272.192,676179114.379,763638333.669,842874267.508,933416951.736,1020618976.66,1109332590.31
+M0+_overdue : 385500389.569,485411067.548,583128994.041,681235862.589,748674152.725,851152701.001,931800757.787,1020477498.97,1107373904.93,1203221010.31,1315099582.21,1422938735.89,1548640364.46,1671214702.27
+M1+_overdue : 280741517.082,356649092.362,448554501.885,541046946.074,628079081.778,706428437.497,798032916.783,885821638.8,969874192.362,1059402255.02,1153875119.11,1257600188.71,1368088839.43,1482860068.96
+M2+_overdue : 211799198.945,276059592.675,347298476.155,436409825.297,524591412.618,610627444.72,688691182.125,780003804.587,867591916.373,952089464.592,1041748081.3,1135014344.8,1238242440.6,1346832938.17
+M3+_overdue : 163380999.182,210864758.233,273492151.577,342992425.509,429336783.452,515838063.338,600920936.196,679929223.042,770648140.904,858473091.378,943250088.641,1032489960.21,1125826666.71,1228033109.24
+M4+_overdue : 130026641.007,163377751.801,210532714.219,272337762.153,340320556.644,424953867.63,510484434.114,595846071.706,674993233.391,765625040.543,853549722.299,938213954.615,1027593661.12,1120524048.21
+M5+_overdue : 107527120.434,130026613.295,163377751.801,210528786.873,271785120.09,338605746.214,422338072.176,507951210.145,593251354.972,672713316.709,763222665.387,851059946.145,935918366.081,1025099316.24
+M6+_overdue : 91625046.1377,107527102.966,130026613.295,163377751.801,210528786.873,271574208.906,338034151.563,421676836.262,507228344.076,592600528.628,672235991.774,762569637.305,850508127.28,935330046.479
+********************************* 保存文件耗时： 199.715360165  seconds ***********************************
+estimator order exposure over 2017-11-24 10:37:24
+-------计算敞口结束------
+计算敞口全部完成！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！
+mysql: [Warning] Using a password on the command line interface can be insecure.
+参数还未上传！！

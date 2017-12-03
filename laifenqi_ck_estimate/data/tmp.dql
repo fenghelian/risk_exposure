@@ -1,0 +1,1 @@
+tunnel download  bidata_market.dm_jituan_changkou_predict_bill_recent_situation_no_test_dt_181/bs="laifenqi",ts="day",pt="2017-11-21"     data/input/all_order_bill_for_para_file.csv     -fd ","  -h 'true';

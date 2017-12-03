@@ -1,0 +1,4 @@
+[config_data]
+check_diff			=  ../laifenqi_ck_estimate/data/output/daily_risk_report_diff.csv
+daily_risk  	    =  ../laifenqi_ck_estimate/data/output/daily_risk_report.csv
+email_config_file						=  properties.conf

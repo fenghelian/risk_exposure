@@ -1,0 +1,9 @@
+config_data												# 配置文件
+qudian_amount_data_file.csv								# 交易额配置文件
+qudian_xj_sw_amount_data_new_file.csv					# 现金、实物、趣先享等在总交易额的占比
+fenqi_cycle_amount_new_rate_accounting.txt              # 财务提供的各产品各账期交易额分布占比
+fenqi_cycle_amount_new_rate.txt							# 各分期类型在现金、实物、趣先享中的资金占比
+type_fenqi_cycle_fenqi_capital_rate_file.csv			# 各个分期资金分布（包含日期）
+order_cycle_fenqi_capital_rate_config_file.csv			# 各分期资金分布（不包含日期）
+day_order_type_cycle_fenqi_coefficient_file				# 特殊日期产品风险系数配置
+fenqi_cycle_fenqi_diff_amount_rate_new_file.csv			# 旧文件
